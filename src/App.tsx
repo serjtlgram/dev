@@ -2198,13 +2198,19 @@ export default function App() {
 
             {/* HEADER CONTACT BUTTON (Centered on Desktop, right-aligned before toggles on Mobile) */}
             <div className="flex-1 flex justify-end xl:justify-center pr-1 sm:pr-3 xl:pr-0 min-w-0">
-              <button
-                onClick={() => setIsContactModalOpen(true)}
-                className={`flex items-center gap-2 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:scale-105 border border-transparent ${themeConfig.btnPrimary}`}
-              >
-                <Send className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-                <span className="whitespace-nowrap">{t.contactBtn}</span>
-              </button>
+              <div className="relative">
+                {/* Radiating Waves */}
+                <div className={`absolute inset-0 rounded-full ${themeConfig.accentBg} animate-ping opacity-20`} style={{ animationDuration: '3s' }} />
+                <div className={`absolute inset-0 rounded-full ${themeConfig.accentBg} animate-ping opacity-10`} style={{ animationDuration: '3s', animationDelay: '1.5s' }} />
+                
+                <button
+                  onClick={() => setIsContactModalOpen(true)}
+                  className={`relative flex items-center gap-2 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-105 hover:scale-105 border border-transparent ${themeConfig.btnPrimary}`}
+                >
+                  <Send className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                  <span className="whitespace-nowrap">{t.contactBtn}</span>
+                </button>
+              </div>
             </div>
 
             {/* DESKTOP ROW (Hidden on mobile) */}
