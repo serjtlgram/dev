@@ -2191,7 +2191,7 @@ export default function App() {
         }`}>
           <div className="max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-1 sm:gap-2">
             <div className="flex items-center shrink-0">
-              <span className="font-mono font-bold tracking-tight text-sm flex items-center whitespace-nowrap">
+              <span className="font-mono font-bold tracking-tight text-sm items-center whitespace-nowrap hidden sm:flex">
                 SERJ.DEV
               </span>
             </div>
