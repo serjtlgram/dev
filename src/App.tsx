@@ -1898,8 +1898,35 @@ const BootPreloader = ({ onComplete }: { onComplete: () => void }) => {
 
 
 export default function App() {
-  const [lang, setLang] = useState<LangKey>('en');
-  const [theme, setTheme] = useState<ThemeKey>('cyber-dark');
+  const [lang, setLang] = useState<LangKey>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('serj_lang');
+      if (stored && ['en', 'es', 'pt', 'uk', 'ru'].includes(stored)) return stored as LangKey;
+      
+      const browserLang = navigator.language.split('-')[0].toLowerCase();
+      if (['en', 'es', 'pt', 'uk', 'ru'].includes(browserLang)) return browserLang as LangKey;
+    }
+    return 'en';
+  });
+
+  const [theme, setTheme] = useState<ThemeKey>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('serj_theme');
+      // Validate theme against THEMES keys
+      if (stored && ['cyber-dark', 'synthwave', 'neo-brutal', 'hacker', 'deep-space'].includes(stored)) {
+        return stored as ThemeKey;
+      }
+    }
+    return 'cyber-dark';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('serj_lang', lang);
+  }, [lang]);
+
+  useEffect(() => {
+    localStorage.setItem('serj_theme', theme);
+  }, [theme]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [hackMode, setHackMode] = useState(false);
   const [activeLangMenu, setActiveLangMenu] = useState(false);
