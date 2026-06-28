@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+.custom-cursor-container {
+  display: none;
+}
+
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+  .custom-cursor-container {
+    display: block;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* Font mono override for terminal */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Disable transitions on canvas */
+canvas {
+  transition: none !important;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: inherit;
+}
+
+/* Scroll reveal keyframes */
+@keyframes fadeUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fadeUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-up-slow {
+  animation: fadeUpIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Abstract drifting blobs keyframes */
+@keyframes floatBlob1 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.18); }
+  66% { transform: translate(-25px, 20px) scale(0.85); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes floatBlob2 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(-35px, 35px) scale(0.8); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob-1 {
+  animation: floatBlob1 14s infinite ease-in-out;
+}
+
+.animate-blob-2 {
+  animation: floatBlob2 18s infinite ease-in-out;
+}
+
+/* ── Per-card hover background animations ── */
+
+@keyframes cardOrbit {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes cardOrbitReverse {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+@keyframes cardGridShimmer {
+  0%   { stroke-dashoffset: 0; opacity: 0.18; }
+  50%  { stroke-dashoffset: 40; opacity: 0.32; }
+  100% { stroke-dashoffset: 0; opacity: 0.18; }
+}
+@keyframes cardWaveFlow {
+  0%   { transform: translateX(0px) scaleY(1); }
+  50%  { transform: translateX(-18px) scaleY(1.08); }
+  100% { transform: translateX(0px) scaleY(1); }
+}
+@keyframes cardRadarSweep {
+  from { transform: rotate(0deg); opacity: 0.7; }
+  to   { transform: rotate(360deg); opacity: 0.7; }
+}
+@keyframes cardRadarPing {
+  0%   { r: 10; opacity: 0.6; }
+  100% { r: 90; opacity: 0; }
+}
+@keyframes cardNetPulse {
+  0%, 100% { opacity: 0.12; }
+  50%       { opacity: 0.3; }
+}
+@keyframes cardScanDrift {
+  0%   { transform: translateY(0%); }
+  100% { transform: translateY(100%); }
+}
+@keyframes cardDotFloat {
+  0%   { cy: 60; opacity: 0.7; }
+  50%  { cy: 40; opacity: 0.4; }
+  100% { cy: 60; opacity: 0.7; }
+}
+@keyframes cardFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.card-bg-orbit-fast  { animation: cardOrbit 10s linear infinite; }
+.card-bg-orbit-med   { animation: cardOrbit 18s linear infinite; }
+.card-bg-orbit-slow  { animation: cardOrbitReverse 26s linear infinite; }
+.card-bg-grid        { animation: cardGridShimmer 4s ease-in-out infinite; }
+.card-bg-wave        { animation: cardWaveFlow 5s ease-in-out infinite; }
+.card-bg-radar       { animation: cardRadarSweep 4s linear infinite; }
+.card-bg-net         { animation: cardNetPulse 3s ease-in-out infinite; }
+.card-bg-scan        { animation: cardScanDrift 3s linear infinite; }
+
