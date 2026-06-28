@@ -2188,18 +2188,15 @@ export default function App() {
         <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 border-b ${
           scrolled ? themeConfig.headerBg : 'bg-transparent border-transparent'
         }`}>
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div className="flex items-center gap-3 shrink-0">
-              <div className={`w-8 h-8 rounded-lg ${themeConfig.accentBg} flex items-center justify-center font-bold font-mono ${themeConfig.accentText} text-sm tracking-tighter`}>
-                SJ
-              </div>
-              <span className="font-mono font-bold tracking-tight text-sm flex items-center gap-2 whitespace-nowrap">
+          <div className="max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-1 sm:gap-2">
+            <div className="flex items-center shrink-0">
+              <span className="font-mono font-bold tracking-tight text-sm flex items-center whitespace-nowrap">
                 SERJ.DEV
               </span>
             </div>
 
             {/* HEADER CONTACT BUTTON (Centered on Desktop, right-aligned before toggles on Mobile) */}
-            <div className="flex-1 flex justify-end xl:justify-center px-4 xl:px-0">
+            <div className="flex-1 flex justify-end xl:justify-center pr-1 sm:pr-3 xl:pr-0 min-w-0">
               <button
                 onClick={() => setIsContactModalOpen(true)}
                 className={`flex items-center gap-2 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:scale-105 border border-transparent ${themeConfig.btnPrimary}`}
