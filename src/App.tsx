@@ -2398,12 +2398,12 @@ export default function App() {
                 <h2 className={`text-[10px] font-mono uppercase tracking-widest ${themeConfig.accent} mb-2`}>// {t.projectsHeader}</h2>
                 <p className="text-3xl md:text-4xl font-black tracking-tighter">{t.projectsTitle}</p>
               </div>
-              <div className={`flex flex-wrap gap-2 transition-all duration-1000 delay-300 transform ${projectsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className={`flex gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] transition-all duration-1000 delay-300 transform ${projectsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {categories.map(cat => (
                   <button
                     key={cat}
                     onClick={() => setActiveFilter(cat)}
-                    className={`text-[10px] font-mono tracking-wider uppercase px-3 py-1.5 rounded-lg border transition-all ${
+                    className={`whitespace-nowrap shrink-0 text-[10px] font-mono tracking-wider uppercase px-3 py-1.5 rounded-lg border transition-all ${
                       activeFilter === cat
                         ? `${themeConfig.accentBg} ${themeConfig.accentText} border-transparent`
                         : `${themeConfig.cardBorder} ${themeConfig.cardBg} opacity-60 hover:opacity-100`
