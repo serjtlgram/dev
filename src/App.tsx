@@ -248,7 +248,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   en: [
     {
       id: "pdr-bot",
-      title: "PDR Ukraine Bot",
+      title: "Telegram Mini-App for Ukraine Traffic Rules",
       category: "Telegram Mini App",
       description: "A highly immersive, real-time gamified educational platform integrated into Telegram. Features customized spaced-repetition algorithms and dynamic performance analytics.",
       techSpecs: "Telegram WebApps Core, React, Redux Toolkit Engine, Node.js Microservices, PostgreSQL, customized internal memory cache for hot query acceleration.",
@@ -258,7 +258,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "pdr-landing",
-      title: "PDR Landing Suite",
+      title: "Traffic Rules Mini-App Landing",
       category: "Marketing Engine",
       description: "An ultra-performant, search-optimized promotional ecosystem constructed via modern static regeneration principles. Fully responsive with fluid grid layouts.",
       techSpecs: "Next.js Static Framework, Tailwind Architectural CSS, Framer Motion Choreography, Incremental Static Regeneration (ISR). Perfect 100/100 Lighthouse performance metrics.",
@@ -269,7 +269,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "loyalty-bot",
-      title: "Loyalty SaaS Matrix",
+      title: "Customer Retention Tool",
       category: "Telegram B2B",
       description: "Next-gen enterprise B2B loyalty automation. Orchestrates client progression structures, referral chains, distribution mechanisms, and statistical triggers.",
       techSpecs: "Fastify Web Core, Node.js, Prisma ORM, Redis Cache Vector, RabbitMQ Message Pipelines, asynchronous webhook dispatching engine.",
@@ -279,7 +279,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "strike-map",
-      title: "OSINT Strike Map 2026",
+      title: "RF Strike Map",
       category: "Defense Analytics",
       description: "An ultra-responsive temporal mapping suite visualizing strategic operations against high-value targets. Renders thousands of interactive coordinate tracks.",
       techSpecs: "Leaflet Map Engine, custom GPU-accelerated Canvas overlay layer, GeoJSON real-time stream parsing, instant automatic spatial validation algorithms.",
@@ -312,7 +312,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   es: [
     {
       id: "pdr-bot",
-      title: "PDR Ucrania Bot",
+      title: "Mini-App de Telegram para Tráfico de Ucrania",
       category: "Telegram Mini App",
       description: "Plataforma educativa gamificada de alta fidelidad integrada en Telegram. Cuenta con algoritmos avanzados de repetición espaciada y analíticas de rendimiento.",
       techSpecs: "Telegram WebApps Core, React, Redux Toolkit, Node.js Microservices, PostgreSQL, caché de consulta optimizada en memoria.",
@@ -322,7 +322,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "pdr-landing",
-      title: "PDR Landing Suite",
+      title: "Landing de Mini-App de Tráfico",
       category: "Marketing Engine",
       description: "Ecosistema promocional ultra-rápido optimizado para buscadores mediante generación estática incremental. Diseño responsivo fluido.",
       techSpecs: "Next.js Static Framework, Tailwind CSS, Framer Motion, ISR. Puntuación de rendimiento perfecta en Google Lighthouse (100/100).",
@@ -333,7 +333,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "loyalty-bot",
-      title: "Loyalty SaaS Matrix",
+      title: "Herramienta de Retención de Clientes",
       category: "Telegram B2B",
       description: "Automatización de lealtad empresarial B2B. Diseña y gestiona flujos de clientes, esquemas de recomendación y activadores analíticos en tiempo real.",
       techSpecs: "Fastify, Node.js, Prisma ORM, Redis, RabbitMQ. Infraestructura asíncrona de alto rendimiento.",
@@ -343,7 +343,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "strike-map",
-      title: "Mapa OSINT de Impactos",
+      title: "Mapa de Impactos en RF",
       category: "Mapeo Estratégico",
       description: "Mapa temporal responsivo que visualiza operaciones defensivas clave. Procesa miles de trayectorias geográficas en tiempo real.",
       techSpecs: "Motor Leaflet.js, capa Canvas acelarada por GPU, análisis de flujos GeoJSON, motores de validación espacial de baja latencia.",
@@ -376,7 +376,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   pt: [
     {
       id: "pdr-bot",
-      title: "PDR Ucrânia Bot",
+      title: "Mini-App do Telegram para Trânsito da Ucrânia",
       category: "Telegram Mini App",
       description: "Ambiente educacional interativo de alto desempenho integrado ao ecossistema do Telegram. Algoritmos inteligentes de repetição de intervalos de memória.",
       techSpecs: "Telegram WebApps, React, Redux Toolkit, Node.js Microservices, PostgreSQL, camada dedicada de memória cache distribuída.",
@@ -386,7 +386,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "pdr-landing",
-      title: "PDR Landing Suite",
+      title: "Landing de Mini-App de Trânsito",
       category: "Marketing Engine",
       description: "Portal promocional de ultra performance otimizado para motores de busca via geração estática sob demanda.",
       techSpecs: "Next.js Static Framework, Tailwind CSS, Framer Motion, ISR. Score de 100/100 garantido em performance no Google Lighthouse.",
@@ -397,7 +397,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "loyalty-bot",
-      title: "Loyalty SaaS Matrix",
+      title: "Ferramenta de Retenção de Clientes",
       category: "Telegram B2B",
       description: "Automatização de planos de fidelidade e indicação para B2B no Telegram. Motor analítico assíncrono projetado para alta escalabilidade.",
       techSpecs: "Fastify Node framework, Prisma ORM, Redis Cache, RabbitMQ. Logística moderna orientada a eventos assíncronos.",
@@ -407,7 +407,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "strike-map",
-      title: "OSINT Strike Map 2026",
+      title: "Mapa de Ataques na RF",
       category: "Análise de Defesa",
       description: "Painel dinâmico que mapeia operações estratégicas e táticas contra instalações inimigas. Processa grandes conjuntos de GeoJSON a 60 FPS estáticos.",
       techSpecs: "Leaflet.js Engine, Canvas de GPU dedicado, feeds geoespaciais em tempo real, validação automatizada de coordenadas.",
@@ -440,7 +440,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   uk: [
     {
       id: "pdr-bot",
-      title: "ПДР України Bot",
+      title: "Mini-app Telegram з вивчення ПДР України",
       category: "Telegram Mini App",
       description: "Високоінтерактивна освітня система вивчення ПДР безпосередньо в месенджері. Розумні алгоритми інтервальних повторень та детальна статистика.",
       techSpecs: "Telegram WebApps Core, React, Redux Toolkit, Node.js Microservices, PostgreSQL, налаштований розподілений кеш для моментальної відповіді.",
@@ -450,7 +450,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "pdr-landing",
-      title: "Лендінг ПДР",
+      title: "Лендінг для mini-app з ПДР",
       category: "Marketing Engine",
       description: "Супершвидкий промо-ресурс, оптимізований під пошукові системи через інструменти інкрементної статичної регенерації даних.",
       techSpecs: "Next.js Static Framework, Tailwind CSS, Framer Motion, ISR. Стабільні 100/100 балів у Google Lighthouse Core Web Vitals.",
@@ -461,7 +461,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "loyalty-bot",
-      title: "Лояльність Клієнтів",
+      title: "Інструмент утримання клієнтів",
       category: "Telegram B2B",
       description: "B2B автоматизація лояльності підприємств нового покоління. Гнучке керування картами клієнтів, реферальними ланцюгами та розсилками.",
       techSpecs: "Fastify Web Core, Prisma ORM, Redis, RabbitMQ. Повністю асинхронне виконання черг завдань та робота з вебхуками.",
@@ -471,7 +471,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "strike-map",
-      title: "Мапа Ураження з 2026 року",
+      title: "Карта уражень РФ",
       category: "OSINT Аналітика",
       description: "Аналітичний картографічний комплекс, що візуалізує оборонні операції по військових об'єктах РФ. Опрацьовує тисячі векторних координат.",
       techSpecs: "Движок Leaflet, прискорений рендеринг через GPU Canvas, парсинг GeoJSON потоків у реальному часі, миттєва гео-валідація.",
@@ -504,7 +504,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ru: [
     {
       id: "pdr-bot",
-      title: "ПДД Украины Bot",
+      title: "Mini-app Telegram по изучению ПДД Украины",
       category: "Telegram Mini App",
       description: "Высокоинтерактивная образовательная система изучения ПДД прямо в мессенджере. Умные алгоритмы интервальных повторений и детальная статистика.",
       techSpecs: "Telegram WebApps Core, React, Redux Toolkit, Node.js Microservices, PostgreSQL, оптимизированный распределенный кэш памяти.",
@@ -514,7 +514,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "pdr-landing",
-      title: "Лендинг ПДД",
+      title: "Лендинг для mini-app по ПДД",
       category: "Marketing Engine",
       description: "Супербыстрый промо-ресурс, оптимизированный под поисковые системы при помощи инструментов инкрементной статической регенерации данных.",
       techSpecs: "Next.js Static Framework, Tailwind CSS, Framer Motion, ISR. Стабильные 100/100 баллов в Google Lighthouse Core Web Vitals.",
@@ -525,7 +525,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "loyalty-bot",
-      title: "Лояльность Клиентов",
+      title: "Инструмент удержания клиентов",
       category: "Telegram B2B",
       description: "B2B автоматизация лояльности предприятий нового поколения. Гибкое управление картами клиентов, реферальными цепочками и рассылками.",
       techSpecs: "Fastify Web Core, Prisma ORM, Redis, RabbitMQ. Полностью асинхронное выполнение очередей задач и обработка вебхуков.",
@@ -535,7 +535,7 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
     },
     {
       id: "strike-map",
-      title: "Карта Поражения с 2026 года",
+      title: "Карта поражений РФ",
       category: "OSINT Аналитика",
       description: "Аналитический картографический комплекс, визуализирующий оборонные операции по военным объектам РФ. Обрабатывает тысячи векторных координат.",
       techSpecs: "Движок Leaflet, вскрытый рендеринг через GPU Canvas, парсинг GeoJSON потоков в реальном времени, мгновенная гео-валидация.",
