@@ -1078,45 +1078,6 @@ const TechGalaxyNode = ({ name, angle, radius, icon, active, onHover, themeAccen
         }`} style={{ color: themeAccent, borderColor: `${themeAccent}30` }}>
           {name}
         </span>
-
-      {/* Portfolio Land — sleek data waves and floating tech particles */}
-      {projectId === 'portfolio-land' && (
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <radialGradient id="bg-portfolio" cx="80%" cy="20%">
-              <stop offset="0%" stopColor="#94a3b8" stopOpacity="0.12" />
-              <stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
-            </radialGradient>
-            <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#cbd5e1" stopOpacity="0.05" />
-              <stop offset="50%" stopColor="#e2e8f0" stopOpacity="0.25" />
-              <stop offset="100%" stopColor="#94a3b8" stopOpacity="0.05" />
-            </linearGradient>
-          </defs>
-          <rect width="400" height="300" fill="url(#bg-portfolio)" />
-          
-          {/* Flowing data lines */}
-          <g className="card-bg-waves" style={{ transformOrigin: '200px 150px', transform: 'rotate(-10deg) scale(1.2)' }}>
-            <path d="M-100,100 C0,150 100,50 200,100 C300,150 400,50 500,100" fill="none" stroke="url(#wave-grad)" strokeWidth="1.5" strokeOpacity="0.5" />
-            <path d="M-100,120 C0,170 100,70 200,120 C300,170 400,70 500,120" fill="none" stroke="url(#wave-grad)" strokeWidth="1" strokeOpacity="0.3" style={{ animationDelay: '0.4s' }} />
-            <path d="M-100,140 C0,190 100,90 200,140 C300,190 400,90 500,140" fill="none" stroke="url(#wave-grad)" strokeWidth="0.5" strokeOpacity="0.2" style={{ animationDelay: '0.8s' }} />
-          </g>
-
-          {/* Floating tech squares */}
-          <rect x="280" y="50" width="40" height="40" fill="none" stroke="#64748b" strokeWidth="0.8" strokeOpacity="0.3" transform="rotate(15 300 70)">
-            <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" />
-          </rect>
-          <rect x="290" y="60" width="20" height="20" fill="none" stroke="#94a3b8" strokeWidth="0.8" strokeOpacity="0.5" transform="rotate(-10 300 70)">
-             <animate attributeName="stroke-opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite" />
-          </rect>
-
-          <circle cx="90" cy="220" r="2" fill="#cbd5e1" fillOpacity="0.6">
-            <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="340" cy="240" r="3" fill="#94a3b8" fillOpacity="0.4">
-            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite" />
-          </circle>
-        </svg>
       )}
     </div>
   );
@@ -1217,6 +1178,46 @@ const AbstractCardBg = ({ projectId, active }: { projectId: string; active: bool
         transition: 'opacity 0.6s cubic-bezier(0.4,0,0.2,1)',
       }}
     >
+      {/* Portfolio Land — sleek data waves and floating tech particles */}
+      {projectId === 'portfolio-land' && (
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="bg-portfolio" cx="80%" cy="20%">
+              <stop offset="0%" stopColor="#94a3b8" stopOpacity="0.12" />
+              <stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#cbd5e1" stopOpacity="0.05" />
+              <stop offset="50%" stopColor="#e2e8f0" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="#94a3b8" stopOpacity="0.05" />
+            </linearGradient>
+          </defs>
+          <rect width="400" height="300" fill="url(#bg-portfolio)" />
+          
+          {/* Flowing data lines */}
+          <g className="card-bg-waves" style={{ transformOrigin: '200px 150px', transform: 'rotate(-10deg) scale(1.2)' }}>
+            <path d="M-100,100 C0,150 100,50 200,100 C300,150 400,50 500,100" fill="none" stroke="url(#wave-grad)" strokeWidth="1.5" strokeOpacity="0.5" />
+            <path d="M-100,120 C0,170 100,70 200,120 C300,170 400,70 500,120" fill="none" stroke="url(#wave-grad)" strokeWidth="1" strokeOpacity="0.3" style={{ animationDelay: '0.4s' }} />
+            <path d="M-100,140 C0,190 100,90 200,140 C300,190 400,90 500,140" fill="none" stroke="url(#wave-grad)" strokeWidth="0.5" strokeOpacity="0.2" style={{ animationDelay: '0.8s' }} />
+          </g>
+
+          {/* Floating tech squares */}
+          <rect x="280" y="50" width="40" height="40" fill="none" stroke="#64748b" strokeWidth="0.8" strokeOpacity="0.3" transform="rotate(15 300 70)">
+            <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" />
+          </rect>
+          <rect x="290" y="60" width="20" height="20" fill="none" stroke="#94a3b8" strokeWidth="0.8" strokeOpacity="0.5" transform="rotate(-10 300 70)">
+             <animate attributeName="stroke-opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite" />
+          </rect>
+
+          <circle cx="90" cy="220" r="2" fill="#cbd5e1" fillOpacity="0.6">
+            <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="340" cy="240" r="3" fill="#94a3b8" fillOpacity="0.4">
+            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      )}
+
       {/* PDR Bot — blue concentric orbital rings with floating dots */}
       {projectId === 'pdr-bot' && (
         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
