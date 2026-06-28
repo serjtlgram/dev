@@ -1912,8 +1912,7 @@ export default function App() {
   const [theme, setTheme] = useState<ThemeKey>(() => {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('serj_theme');
-      // Validate theme against THEMES keys
-      if (stored && ['cyber-dark', 'synthwave', 'neo-brutal', 'hacker', 'deep-space'].includes(stored)) {
+      if (stored && stored in THEMES) {
         return stored as ThemeKey;
       }
     }
