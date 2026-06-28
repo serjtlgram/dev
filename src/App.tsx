@@ -715,8 +715,8 @@ function useScrollReveal() {
         }
       },
       { 
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0,
+        rootMargin: '0px 0px -10% 0px'
       }
     );
 
@@ -1453,6 +1453,19 @@ const ProjectCard = ({ project, index, t, themeConfig, visible }: {
     setHovered(false);
   };
 
+  const handleTouch = (e: React.TouchEvent) => {
+    const card = cardRef.current;
+    if (!card) return;
+    const rect = card.getBoundingClientRect();
+    const touch = e.touches[0];
+    const width = rect.width;
+    const height = rect.height;
+    const x = (touch.clientX - rect.left) / width - 0.5;
+    const y = (touch.clientY - rect.top) / height - 0.5;
+    setTilt({ x: x * 18, y: y * -18 });
+    if (!hovered) setHovered(true);
+  };
+
   return (
     <div
       className={`transition-all duration-[800ms] ${revealed ? 'animate-fade-up' : 'opacity-0'}`}
@@ -1465,6 +1478,8 @@ const ProjectCard = ({ project, index, t, themeConfig, visible }: {
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouch}
+        onTouchMove={handleTouch}
         className={`relative flex flex-col justify-between h-full rounded-2xl border ${themeConfig.cardBorder} ${themeConfig.cardBg} ${themeConfig.cardHoverBorder} p-6 md:p-8 backdrop-blur-md overflow-hidden group cursor-pointer`}
         style={{
           transform: `perspective(1000px) rotateY(${tilt.x}deg) rotateX(${tilt.y}deg) scale(${hovered ? 1.025 : 1})`,
@@ -2315,7 +2330,7 @@ export default function App() {
                 {t.heroBadge}
               </div>
 
-              <h1 className={`text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 transition-all duration-1000 delay-300 transform ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${['uk', 'ru'].includes(lang) ? 'leading-[1.05]' : 'leading-[0.9]'}`}>
+              <h1 className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 transition-all duration-1000 delay-300 transform ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${['uk', 'ru'].includes(lang) ? 'leading-[1.05]' : 'leading-[0.9]'}`}>
                 <span className="block">{t.heroTitle}</span>
                 <span className={`block bg-gradient-to-r ${themeConfig.heroGlow} bg-clip-text text-transparent`}>
                   {t.heroTitleGlow}
