@@ -2398,7 +2398,7 @@ export default function App() {
                 <h2 className={`text-[10px] font-mono uppercase tracking-widest ${themeConfig.accent} mb-2`}>// {t.projectsHeader}</h2>
                 <p className="text-3xl md:text-4xl font-black tracking-tighter">{t.projectsTitle}</p>
               </div>
-              <div className={`flex gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] transition-all duration-1000 delay-300 transform ${projectsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className={`flex gap-2 overflow-x-auto w-[calc(100%+1rem)] -mr-4 pr-4 md:w-auto md:mr-0 md:pr-0 [mask-image:linear-gradient(to_right,black_85%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,black_85%,transparent_100%)] md:[mask-image:none] md:[-webkit-mask-image:none] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] transition-all duration-1000 delay-300 transform ${projectsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {categories.map(cat => (
                   <button
                     key={cat}
@@ -2412,6 +2412,7 @@ export default function App() {
                     {cat === 'all' ? t.all : projects.find(p => p.id === cat)?.title ?? cat}
                   </button>
                 ))}
+                <div className="w-8 shrink-0 md:hidden"></div>
               </div>
             </div>
 
