@@ -247,6 +247,16 @@ const TRANSLATIONS = {
 const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: string; description: string; techSpecs: string; link: string; alternativeLink?: string; stats: Record<string, string>; gradient: string; }[]> = {
   en: [
     {
+      id: "loyalty-bot",
+      title: "Customer Retention Tool",
+      category: "Telegram B2B",
+      description: "Next-gen enterprise B2B loyalty automation. Orchestrates client progression structures, referral chains, distribution mechanisms, and statistical triggers.",
+      techSpecs: "Fastify Web Core, Node.js, Prisma ORM, Redis Cache Vector, RabbitMQ Message Pipelines, asynchronous webhook dispatching engine.",
+      link: "https://t.me/diploybot?startapp",
+      stats: { "transactions": "1.2M", "ping": "45ms", "systems": "12 APIs" },
+      gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
       id: "pdr-bot",
       title: "Telegram Mini-App for Ukraine Traffic Rules",
       category: "Telegram Mini App",
@@ -266,16 +276,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://pdr-landing-psi.vercel.app/",
       stats: { "lighthouse": "100/100", "bounce": "12%", "conversion": "24.8%" },
       gradient: "from-emerald-500 to-teal-800"
-    },
-    {
-      id: "loyalty-bot",
-      title: "Customer Retention Tool",
-      category: "Telegram B2B",
-      description: "Next-gen enterprise B2B loyalty automation. Orchestrates client progression structures, referral chains, distribution mechanisms, and statistical triggers.",
-      techSpecs: "Fastify Web Core, Node.js, Prisma ORM, Redis Cache Vector, RabbitMQ Message Pipelines, asynchronous webhook dispatching engine.",
-      link: "https://t.me/diploybot?startapp",
-      stats: { "transactions": "1.2M", "ping": "45ms", "systems": "12 APIs" },
-      gradient: "from-purple-500 to-fuchsia-900"
     },
     {
       id: "strike-map",
@@ -311,6 +311,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   es: [
     {
+      id: "loyalty-bot",
+      title: "Herramienta de Retención de Clientes",
+      category: "Telegram B2B",
+      description: "Automatización de lealtad empresarial B2B. Diseña y gestiona flujos de clientes, esquemas de recomendación y activadores analíticos en tiempo real.",
+      techSpecs: "Fastify, Node.js, Prisma ORM, Redis, RabbitMQ. Infraestructura asíncrona de alto rendimiento.",
+      link: "https://t.me/diploybot?startapp",
+      stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
+      gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
       id: "pdr-bot",
       title: "Mini-App de Telegram para Tráfico de Ucrania",
       category: "Telegram Mini App",
@@ -330,16 +340,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://pdr-landing-psi.vercel.app/",
       stats: { "lighthouse": "100/100", "rebotes": "12%", "conv": "24.8%" },
       gradient: "from-emerald-500 to-teal-800"
-    },
-    {
-      id: "loyalty-bot",
-      title: "Herramienta de Retención de Clientes",
-      category: "Telegram B2B",
-      description: "Automatización de lealtad empresarial B2B. Diseña y gestiona flujos de clientes, esquemas de recomendación y activadores analíticos en tiempo real.",
-      techSpecs: "Fastify, Node.js, Prisma ORM, Redis, RabbitMQ. Infraestructura asíncrona de alto rendimiento.",
-      link: "https://t.me/diploybot?startapp",
-      stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
-      gradient: "from-purple-500 to-fuchsia-900"
     },
     {
       id: "strike-map",
@@ -375,6 +375,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   pt: [
     {
+      id: "loyalty-bot",
+      title: "Ferramenta de Retenção de Clientes",
+      category: "Telegram B2B",
+      description: "Automatização de planos de fidelidade e indicação para B2B no Telegram. Motor analítico assíncrono projetado para alta escalabilidade.",
+      techSpecs: "Fastify Node framework, Prisma ORM, Redis Cache, RabbitMQ. Logística moderna orientada a eventos assíncronos.",
+      link: "https://t.me/diploybot?startapp",
+      stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
+      gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
       id: "pdr-bot",
       title: "Mini-App do Telegram para Trânsito da Ucrânia",
       category: "Telegram Mini App",
@@ -394,16 +404,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://pdr-landing-psi.vercel.app/",
       stats: { "lighthouse": "100/100", "bounces": "12%", "conv": "24.8%" },
       gradient: "from-emerald-500 to-teal-800"
-    },
-    {
-      id: "loyalty-bot",
-      title: "Ferramenta de Retenção de Clientes",
-      category: "Telegram B2B",
-      description: "Automatização de planos de fidelidade e indicação para B2B no Telegram. Motor analítico assíncrono projetado para alta escalabilidade.",
-      techSpecs: "Fastify Node framework, Prisma ORM, Redis Cache, RabbitMQ. Logística moderna orientada a eventos assíncronos.",
-      link: "https://t.me/diploybot?startapp",
-      stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
-      gradient: "from-purple-500 to-fuchsia-900"
     },
     {
       id: "strike-map",
@@ -439,6 +439,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   uk: [
     {
+      id: "loyalty-bot",
+      title: "Інструмент утримання клієнтів",
+      category: "Telegram B2B",
+      description: "B2B автоматизація лояльності підприємств нового покоління. Гнучке керування картами клієнтів, реферальними ланцюгами та розсилками.",
+      techSpecs: "Fastify Web Core, Prisma ORM, Redis, RabbitMQ. Повністю асинхронне виконання черг завдань та робота з вебхуками.",
+      link: "https://t.me/diploybot?startapp",
+      stats: { "транзакції": "1.2M", "пінг": "45ms", "інтеграції": "12 APIs" },
+      gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
       id: "pdr-bot",
       title: "Mini-app Telegram з вивчення ПДР України",
       category: "Telegram Mini App",
@@ -458,16 +468,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://pdr-landing-psi.vercel.app/",
       stats: { "lighthouse": "100/100", "відскоки": "12%", "конверсія": "24.8%" },
       gradient: "from-emerald-500 to-teal-800"
-    },
-    {
-      id: "loyalty-bot",
-      title: "Інструмент утримання клієнтів",
-      category: "Telegram B2B",
-      description: "B2B автоматизація лояльності підприємств нового покоління. Гнучке керування картами клієнтів, реферальними ланцюгами та розсилками.",
-      techSpecs: "Fastify Web Core, Prisma ORM, Redis, RabbitMQ. Повністю асинхронне виконання черг завдань та робота з вебхуками.",
-      link: "https://t.me/diploybot?startapp",
-      stats: { "транзакції": "1.2M", "пінг": "45ms", "інтеграції": "12 APIs" },
-      gradient: "from-purple-500 to-fuchsia-900"
     },
     {
       id: "strike-map",
@@ -503,6 +503,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   ru: [
     {
+      id: "loyalty-bot",
+      title: "Инструмент удержания клиентов",
+      category: "Telegram B2B",
+      description: "B2B автоматизация лояльности предприятий нового поколения. Гибкое управление картами клиентов, реферальными цепочками и рассылками.",
+      techSpecs: "Fastify Web Core, Prisma ORM, Redis, RabbitMQ. Полностью асинхронное выполнение очередей задач и обработка вебхуков.",
+      link: "https://t.me/diploybot?startapp",
+      stats: { "транзакции": "1.2M", "ping": "45ms", "интеграции": "12 APIs" },
+      gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
       id: "pdr-bot",
       title: "Mini-app Telegram по изучению ПДД Украины",
       category: "Telegram Mini App",
@@ -522,16 +532,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://pdr-landing-psi.vercel.app/",
       stats: { "lighthouse": "100/100", "отказы": "12%", "конверсия": "24.8%" },
       gradient: "from-emerald-500 to-teal-800"
-    },
-    {
-      id: "loyalty-bot",
-      title: "Инструмент удержания клиентов",
-      category: "Telegram B2B",
-      description: "B2B автоматизация лояльности предприятий нового поколения. Гибкое управление картами клиентов, реферальными цепочками и рассылками.",
-      techSpecs: "Fastify Web Core, Prisma ORM, Redis, RabbitMQ. Полностью асинхронное выполнение очередей задач и обработка вебхуков.",
-      link: "https://t.me/diploybot?startapp",
-      stats: { "транзакции": "1.2M", "ping": "45ms", "интеграции": "12 APIs" },
-      gradient: "from-purple-500 to-fuchsia-900"
     },
     {
       id: "strike-map",
