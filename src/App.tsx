@@ -59,8 +59,8 @@ const TRANSLATIONS = {
     mirror: "Mirror Link",
     all: "ALL PRODUCTS",
     techStackTitle: "ENGINE SPECIFICATION:",
-    themeLabel: "THEME PROFILE:",
-    langLabel: "LANGUAGE PORT:"
+    themeLabel: "THEME:",
+    langLabel: "LANGUAGE:"
   },
   es: {
     preloaderBooting: "Iniciando Serj.Dev Core...",
@@ -104,7 +104,7 @@ const TRANSLATIONS = {
     mirror: "Enlace Espejo",
     all: "TODOS LOS PRODUCTOS",
     techStackTitle: "ESPECIFICACIÓN:",
-    themeLabel: "PERFIL DE TEMA:",
+    themeLabel: "TEMA:",
     langLabel: "IDIOMA:"
   },
   pt: {
@@ -149,7 +149,7 @@ const TRANSLATIONS = {
     mirror: "Link Alternativo",
     all: "TODOS OS PRODUTOS",
     techStackTitle: "ESPECIFICAÇÕES:",
-    themeLabel: "PERFIL DE TEMA:",
+    themeLabel: "TEMA:",
     langLabel: "IDIOMA:"
   },
   uk: {
@@ -194,8 +194,8 @@ const TRANSLATIONS = {
     mirror: "Дзеркало Вузла",
     all: "УСІ АКТИВИ",
     techStackTitle: "ТЕХНІЧНА СПЕЦИФІКАЦІЯ:",
-    themeLabel: "ПРОФІЛЬ ТЕМИ:",
-    langLabel: "ПОРТ МОВИ:"
+    themeLabel: "ТЕМА:",
+    langLabel: "МОВА:"
   },
   ru: {
     preloaderBooting: "Запуск системного ядра Serj.Dev...",
@@ -239,8 +239,8 @@ const TRANSLATIONS = {
     mirror: "Зеркало Ссылки",
     all: "ВСЕ ПРОДУКТЫ",
     techStackTitle: "ТЕХНИЧЕСКАЯ СПЕЦИФИКАЦИЯ:",
-    themeLabel: "ТЕХНИЧЕСКИЙ ПРОФИЛЬ ТЕМЫ:",
-    langLabel: "ЯЗЫКОВОЙ ПОРТ:"
+    themeLabel: "ТЕМА:",
+    langLabel: "ЯЗЫК:"
   }
 };
 
