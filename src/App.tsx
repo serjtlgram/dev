@@ -299,14 +299,14 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-amber-500 to-amber-900"
     },
     {
-      id: "portfolio-land",
-      title: "Interactive Developer Portfolio",
-      category: "Frontend Identity",
-      description: "A highly dynamic, themeable personal landing page. Features a mock interactive terminal, multi-language support, and sleek micro-animations.",
-      techSpecs: "React, Vite, Tailwind CSS, customized UI components, dynamic theme context engine.",
-      link: "https://dev-eosin-psi.vercel.app/",
-      stats: { "themes": "4+", "langs": "5", "performance": "100/100" },
-      gradient: "from-slate-700 to-zinc-900"
+      id: "van-gogh",
+      title: "Van Gogh Immersive Experience",
+      category: "Interactive 3D Art",
+      description: "An immersive and highly interactive journey into the art of Vincent van Gogh. Features stunning 3D environments, dynamic visual effects, and a deep dive into his masterpieces.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, custom shader implementations, immersive audio.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "environments": "3D", "fps": "60.0", "experience": "Immersive" },
+      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   es: [
@@ -363,14 +363,14 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-amber-500 to-amber-900"
     },
     {
-      id: "portfolio-land",
-      title: "Portafolio de Desarrollador",
-      category: "Frontend Identity",
-      description: "Una página de aterrizaje personal altamente dinámica y personalizable. Cuenta con una terminal interactiva, soporte multilingüe y micro-animaciones elegantes.",
-      techSpecs: "React, Vite, Tailwind CSS, componentes UI personalizados, motor de temas dinámico.",
-      link: "https://dev-eosin-psi.vercel.app/",
-      stats: { "temas": "4+", "idiomas": "5", "rendimiento": "100/100" },
-      gradient: "from-slate-700 to-zinc-900"
+      id: "van-gogh",
+      title: "Experiencia Inmersiva Van Gogh",
+      category: "Arte 3D Interactivo",
+      description: "Un viaje inmersivo y altamente interactivo al arte de Vincent van Gogh. Cuenta con impresionantes entornos 3D, efectos visuales dinámicos y una exploración profunda de sus obras maestras.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementaciones de shaders personalizados, audio inmersivo.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "entornos": "3D", "fps": "60.0", "experiencia": "Inmersiva" },
+      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   pt: [
@@ -427,14 +427,14 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-amber-500 to-amber-900"
     },
     {
-      id: "portfolio-land",
-      title: "Portfólio Interativo",
-      category: "Frontend Identity",
-      description: "Uma página de destino pessoal altamente dinâmica e tematizável. Possui um terminal interativo, suporte multilíngue e micro-animações elegantes.",
-      techSpecs: "React, Vite, Tailwind CSS, componentes UI personalizados, motor de temas dinâmico.",
-      link: "https://dev-eosin-psi.vercel.app/",
-      stats: { "temas": "4+", "idiomas": "5", "performance": "100/100" },
-      gradient: "from-slate-700 to-zinc-900"
+      id: "van-gogh",
+      title: "Experiência Imersiva Van Gogh",
+      category: "Arte 3D Interativa",
+      description: "Uma jornada imersiva e altamente interativa na arte de Vincent van Gogh. Apresenta impressionantes ambientes 3D, efeitos visuais dinâmicos e um mergulho profundo em suas obras-primas.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementações de shaders personalizados, áudio imersivo.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "ambientes": "3D", "fps": "60.0", "experiência": "Imersiva" },
+      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   uk: [
@@ -491,14 +491,14 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-amber-500 to-amber-900"
     },
     {
-      id: "portfolio-land",
-      title: "Інтерактивне Портфоліо",
-      category: "Frontend Identity",
-      description: "Динамічний персональний лендінг із підтримкою змінних тем. Містить інтерактивний термінал, багатомовність та стильні мікроанімації.",
-      techSpecs: "React, Vite, Tailwind CSS, кастомні UI компоненти, динамічний рушій тем.",
-      link: "https://dev-eosin-psi.vercel.app/",
-      stats: { "теми": "4+", "мови": "5", "продуктивність": "100/100" },
-      gradient: "from-slate-700 to-zinc-900"
+      id: "van-gogh",
+      title: "Імерсивна виставка Ван Гога",
+      category: "Інтерактивне 3D Мистецтво",
+      description: "Імерсивна та високоінтерактивна подорож у мистецтво Вінсента ван Гога. Включає вражаючі 3D-середовища, динамічні візуальні ефекти та глибоке занурення в його шедеври.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомні шейдери, імерсивний звук.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "середовища": "3D", "fps": "60.0", "досвід": "Імерсивний" },
+      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   ru: [
@@ -555,14 +555,14 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-amber-500 to-amber-900"
     },
     {
-      id: "portfolio-land",
-      title: "Интерактивное Портфолио",
-      category: "Frontend Identity",
-      description: "Динамичный персональный лендинг с поддержкой смены тем. Содержит интерактивный терминал, мультиязычность и стильные микроанимации.",
-      techSpecs: "React, Vite, Tailwind CSS, кастомные UI компоненты, динамический движок тем.",
-      link: "https://dev-eosin-psi.vercel.app/",
-      stats: { "темы": "4+", "языки": "5", "скорость": "100/100" },
-      gradient: "from-slate-700 to-zinc-900"
+      id: "van-gogh",
+      title: "Иммерсивная выставка Ван Гога",
+      category: "Интерактивное 3D Искусство",
+      description: "Иммерсивное и высокоинтерактивное путешествие в искусство Винсента ван Гога. Включает впечатляющие 3D-среды, динамичные визуальные эффекты и глубокое погружение в его шедевры.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомные шейдеры, иммерсивный звук.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "среды": "3D", "fps": "60.0", "опыт": "Иммерсивный" },
+      gradient: "from-blue-600 to-yellow-600"
     }
   ]
 };
@@ -1178,42 +1178,41 @@ const AbstractCardBg = ({ projectId, active }: { projectId: string; active: bool
         transition: 'opacity 0.6s cubic-bezier(0.4,0,0.2,1)',
       }}
     >
-      {/* Portfolio Land — sleek data waves and floating tech particles */}
-      {projectId === 'portfolio-land' && (
+      {/* Van Gogh Experience — starry night swirls and vibrant yellows */}
+      {projectId === 'van-gogh' && (
         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
           <defs>
-            <radialGradient id="bg-portfolio" cx="80%" cy="20%">
-              <stop offset="0%" stopColor="#94a3b8" stopOpacity="0.12" />
-              <stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
+            <radialGradient id="bg-vangogh" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#eab308" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#1e3a8a" stopOpacity="0.05" />
             </radialGradient>
-            <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#cbd5e1" stopOpacity="0.05" />
-              <stop offset="50%" stopColor="#e2e8f0" stopOpacity="0.25" />
-              <stop offset="100%" stopColor="#94a3b8" stopOpacity="0.05" />
+            <linearGradient id="swirl-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fde047" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
             </linearGradient>
           </defs>
-          <rect width="400" height="300" fill="url(#bg-portfolio)" />
+          <rect width="400" height="300" fill="url(#bg-vangogh)" />
           
-          {/* Flowing data lines */}
-          <g className="card-bg-waves" style={{ transformOrigin: '200px 150px', transform: 'rotate(-10deg) scale(1.2)' }}>
-            <path d="M-100,100 C0,150 100,50 200,100 C300,150 400,50 500,100" fill="none" stroke="url(#wave-grad)" strokeWidth="1.5" strokeOpacity="0.5" />
-            <path d="M-100,120 C0,170 100,70 200,120 C300,170 400,70 500,120" fill="none" stroke="url(#wave-grad)" strokeWidth="1" strokeOpacity="0.3" style={{ animationDelay: '0.4s' }} />
-            <path d="M-100,140 C0,190 100,90 200,140 C300,190 400,90 500,140" fill="none" stroke="url(#wave-grad)" strokeWidth="0.5" strokeOpacity="0.2" style={{ animationDelay: '0.8s' }} />
+          {/* Starry Night swirls */}
+          <g className="card-bg-swirls" style={{ transformOrigin: '200px 150px' }}>
+            <path d="M50,150 C80,80 150,100 200,150 C250,200 320,120 350,150" fill="none" stroke="url(#swirl-grad)" strokeWidth="2.5" strokeOpacity="0.6">
+              <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+            </path>
+            <path d="M100,200 C150,100 250,120 300,200" fill="none" stroke="url(#swirl-grad)" strokeWidth="1.5" strokeOpacity="0.4">
+              <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="15s" repeatCount="indefinite" />
+            </path>
           </g>
 
-          {/* Floating tech squares */}
-          <rect x="280" y="50" width="40" height="40" fill="none" stroke="#64748b" strokeWidth="0.8" strokeOpacity="0.3" transform="rotate(15 300 70)">
-            <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" />
-          </rect>
-          <rect x="290" y="60" width="20" height="20" fill="none" stroke="#94a3b8" strokeWidth="0.8" strokeOpacity="0.5" transform="rotate(-10 300 70)">
-             <animate attributeName="stroke-opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite" />
-          </rect>
-
-          <circle cx="90" cy="220" r="2" fill="#cbd5e1" fillOpacity="0.6">
+          {/* Glowing stars */}
+          <circle cx="80" cy="80" r="4" fill="#fef08a" fillOpacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="r" values="4;5;4" dur="3s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="320" cy="100" r="3" fill="#fde047" fillOpacity="0.6">
             <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite" />
           </circle>
-          <circle cx="340" cy="240" r="3" fill="#94a3b8" fillOpacity="0.4">
-            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite" />
+          <circle cx="200" cy="220" r="2" fill="#bfdbfe" fillOpacity="0.5">
+            <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite" />
           </circle>
         </svg>
       )}
@@ -1412,7 +1411,7 @@ const getProjectBlobColors = (projectId: string) => {
     'loyalty-bot': { blob1: 'bg-purple-500/20', blob2: 'bg-fuchsia-600/15' },
     'strike-map': { blob1: 'bg-red-500/20', blob2: 'bg-rose-600/15' },
         'art-quest': { blob1: 'bg-amber-500/20', blob2: 'bg-yellow-600/15' },
-    'portfolio-land': { blob1: 'bg-slate-500/20', blob2: 'bg-zinc-600/15' }
+    'van-gogh': { blob1: 'bg-yellow-500/20', blob2: 'bg-blue-600/15' }
   };
   return colors[projectId] || { blob1: 'bg-cyan-500/20', blob2: 'bg-blue-600/15' };
 };
