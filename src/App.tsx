@@ -257,6 +257,26 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-purple-500 to-fuchsia-900"
     },
     {
+      id: "art-quest",
+      title: "ART Thriller Quest",
+      category: "Interactive Narrative",
+      description: "A dark, branching psychological thriller built with custom audio-spatial layers, dynamic decision trees, and post-processed visual noise.",
+      techSpecs: "React, State Machine Core Engine, HTML5 Web Audio Synthesis, customized CSS shader overlays, resource background preloader.",
+      link: "https://artquest-delta.vercel.app/",
+      stats: { "pathing": "5 Endings", "assets": "120MB+", "session": "22min" },
+      gradient: "from-amber-500 to-amber-900"
+    },
+    {
+      id: "van-gogh",
+      title: "Van Gogh Immersive Experience",
+      category: "Interactive 3D Art",
+      description: "An immersive and highly interactive journey into the art of Vincent van Gogh. Features stunning 3D environments, dynamic visual effects, and a deep dive into his masterpieces.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, custom shader implementations, immersive audio.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "environments": "3D", "fps": "60.0", "experience": "Immersive" },
+      gradient: "from-blue-600 to-yellow-600"
+    },
+    {
       id: "pdr-bot",
       title: "Telegram Mini-App for Ukraine Traffic Rules",
       category: "Telegram Mini App",
@@ -287,26 +307,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://serjtlgram.github.io/strike-map/",
       stats: { "tracking": "3200+", "fps": "60.0", "latency": "Realtime" },
       gradient: "from-red-500 to-rose-900"
-    },
-    {
-      id: "art-quest",
-      title: "ART Thriller Quest",
-      category: "Interactive Narrative",
-      description: "A dark, branching psychological thriller built with custom audio-spatial layers, dynamic decision trees, and post-processed visual noise.",
-      techSpecs: "React, State Machine Core Engine, HTML5 Web Audio Synthesis, customized CSS shader overlays, resource background preloader.",
-      link: "https://artquest-delta.vercel.app/",
-      stats: { "pathing": "5 Endings", "assets": "120MB+", "session": "22min" },
-      gradient: "from-amber-500 to-amber-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Van Gogh Immersive Experience",
-      category: "Interactive 3D Art",
-      description: "An immersive and highly interactive journey into the art of Vincent van Gogh. Features stunning 3D environments, dynamic visual effects, and a deep dive into his masterpieces.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, custom shader implementations, immersive audio.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "environments": "3D", "fps": "60.0", "experience": "Immersive" },
-      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   es: [
@@ -319,6 +319,26 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
+      id: "art-quest",
+      title: "ART Thriller Quest",
+      category: "Aventura Narrativa",
+      description: "Aventura psicológica inmersiva y cinematográfica. Desarrollada con gráficos de decisión no lineales y capas de audio posicional.",
+      techSpecs: "React, State Machine Engine, Web Audio API, superposiciones de sombreadores CSS personalizados, cargador de medios asíncrono.",
+      link: "https://artquest-delta.vercel.app/",
+      stats: { "finales": "5 unique", "medios": "120MB+", "sesion": "22min" },
+      gradient: "from-amber-500 to-amber-900"
+    },
+    {
+      id: "van-gogh",
+      title: "Experiencia Inmersiva Van Gogh",
+      category: "Arte 3D Interactivo",
+      description: "Un viaje inmersivo y altamente interactivo al arte de Vincent van Gogh. Cuenta con impresionantes entornos 3D, efectos visuales dinámicos y una exploración profunda de sus obras maestras.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementaciones de shaders personalizados, audio inmersivo.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "entornos": "3D", "fps": "60.0", "experiencia": "Inmersiva" },
+      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -351,26 +371,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://serjtlgram.github.io/strike-map/",
       stats: { "nodos": "3200+", "fps": "60.0", "actualiz": "Realtime" },
       gradient: "from-red-500 to-rose-900"
-    },
-    {
-      id: "art-quest",
-      title: "ART Thriller Quest",
-      category: "Aventura Narrativa",
-      description: "Aventura psicológica inmersiva y cinematográfica. Desarrollada con gráficos de decisión no lineales y capas de audio posicional.",
-      techSpecs: "React, State Machine Engine, Web Audio API, superposiciones de sombreadores CSS personalizados, cargador de medios asíncrono.",
-      link: "https://artquest-delta.vercel.app/",
-      stats: { "finales": "5 unique", "medios": "120MB+", "sesion": "22min" },
-      gradient: "from-amber-500 to-amber-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Experiencia Inmersiva Van Gogh",
-      category: "Arte 3D Interactivo",
-      description: "Un viaje inmersivo y altamente interactivo al arte de Vincent van Gogh. Cuenta con impresionantes entornos 3D, efectos visuales dinámicos y una exploración profunda de sus obras maestras.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementaciones de shaders personalizados, audio inmersivo.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "entornos": "3D", "fps": "60.0", "experiencia": "Inmersiva" },
-      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   pt: [
@@ -383,6 +383,26 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
+      id: "art-quest",
+      title: "ART Thriller Quest",
+      category: "Narrativa Interativa",
+      description: "Jogo psicológico cinemático e sombrio com ramificações de decisões complexas e design de áudio posicional HTML5.",
+      techSpecs: "React, State Machine Engine, Web Audio API, shaders CSS sob medida, pré-carregamento assíncrono de recursos estáticos.",
+      link: "https://artquest-delta.vercel.app/",
+      stats: { "finais": "5 unique", "media": "120MB+", "sessao": "22min" },
+      gradient: "from-amber-500 to-amber-900"
+    },
+    {
+      id: "van-gogh",
+      title: "Experiência Imersiva Van Gogh",
+      category: "Arte 3D Interativa",
+      description: "Uma jornada imersiva e altamente interativa na arte de Vincent van Gogh. Apresenta impressionantes ambientes 3D, efeitos visuais dinâmicos e um mergulho profundo em suas obras-primas.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementações de shaders personalizados, áudio imersivo.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "ambientes": "3D", "fps": "60.0", "experiência": "Imersiva" },
+      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -415,26 +435,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://serjtlgram.github.io/strike-map/",
       stats: { "alvos": "3200+", "fps": "60.0", "delay": "Realtime" },
       gradient: "from-red-500 to-rose-900"
-    },
-    {
-      id: "art-quest",
-      title: "ART Thriller Quest",
-      category: "Narrativa Interativa",
-      description: "Jogo psicológico cinemático e sombrio com ramificações de decisões complexas e design de áudio posicional HTML5.",
-      techSpecs: "React, State Machine Engine, Web Audio API, shaders CSS sob medida, pré-carregamento assíncrono de recursos estáticos.",
-      link: "https://artquest-delta.vercel.app/",
-      stats: { "finais": "5 unique", "media": "120MB+", "sessao": "22min" },
-      gradient: "from-amber-500 to-amber-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Experiência Imersiva Van Gogh",
-      category: "Arte 3D Interativa",
-      description: "Uma jornada imersiva e altamente interativa na arte de Vincent van Gogh. Apresenta impressionantes ambientes 3D, efeitos visuais dinâmicos e um mergulho profundo em suas obras-primas.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementações de shaders personalizados, áudio imersivo.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "ambientes": "3D", "fps": "60.0", "experiência": "Imersiva" },
-      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   uk: [
@@ -447,6 +447,26 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "транзакції": "1.2M", "пінг": "45ms", "інтеграції": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
+      id: "art-quest",
+      title: "АРТ-трилер",
+      category: "Квест",
+      description: "Атмосферний кінематографічний психологічний трилер з нелінійним сценарієм, інтегрованими звуковими фільтрами та ефектом плівкового шуму.",
+      techSpecs: "React, State Machine Core, HTML5 Web Audio Synthesis, CSS Shader overlay, фоновий асинхронний завантажувач ресурсів.",
+      link: "https://artquest-delta.vercel.app/",
+      stats: { "фінали": "5 endings", "медіа": "120MB+", "сесія": "22min" },
+      gradient: "from-amber-500 to-amber-900"
+    },
+    {
+      id: "van-gogh",
+      title: "Імерсивна виставка Ван Гога",
+      category: "Інтерактивне 3D Мистецтво",
+      description: "Імерсивна та високоінтерактивна подорож у мистецтво Вінсента ван Гога. Включає вражаючі 3D-середовища, динамічні візуальні ефекти та глибоке занурення в його шедеври.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомні шейдери, імерсивний звук.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "середовища": "3D", "fps": "60.0", "досвід": "Імерсивний" },
+      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -479,26 +499,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://serjtlgram.github.io/strike-map/",
       stats: { "об'єкти": "3200+", "кадрів": "60.0", "оновлення": "Realtime" },
       gradient: "from-red-500 to-rose-900"
-    },
-    {
-      id: "art-quest",
-      title: "АРТ-трилер",
-      category: "Квест",
-      description: "Атмосферний кінематографічний психологічний трилер з нелінійним сценарієм, інтегрованими звуковими фільтрами та ефектом плівкового шуму.",
-      techSpecs: "React, State Machine Core, HTML5 Web Audio Synthesis, CSS Shader overlay, фоновий асинхронний завантажувач ресурсів.",
-      link: "https://artquest-delta.vercel.app/",
-      stats: { "фінали": "5 endings", "медіа": "120MB+", "сесія": "22min" },
-      gradient: "from-amber-500 to-amber-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Імерсивна виставка Ван Гога",
-      category: "Інтерактивне 3D Мистецтво",
-      description: "Імерсивна та високоінтерактивна подорож у мистецтво Вінсента ван Гога. Включає вражаючі 3D-середовища, динамічні візуальні ефекти та глибоке занурення в його шедеври.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомні шейдери, імерсивний звук.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "середовища": "3D", "fps": "60.0", "досвід": "Імерсивний" },
-      gradient: "from-blue-600 to-yellow-600"
     }
   ],
   ru: [
@@ -511,6 +511,26 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "транзакции": "1.2M", "ping": "45ms", "интеграции": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
+    },
+    {
+      id: "art-quest",
+      title: "АРТ-трилер",
+      category: "Квест",
+      description: "Атмосферный кинематографический психологический трилер с нелинейным сценарием, интегрированными звуковыми фильтрами и эффектом пленочного шума.",
+      techSpecs: "React, State Machine Core, HTML5 Web Audio Synthesis, CSS Shader overlay, фоновый асинхронный загрузчик ресурсов.",
+      link: "https://artquest-delta.vercel.app/",
+      stats: { "финалы": "5 endings", "медиа": "120MB+", "сессия": "22min" },
+      gradient: "from-amber-500 to-amber-900"
+    },
+    {
+      id: "van-gogh",
+      title: "Иммерсивная выставка Ван Гога",
+      category: "Интерактивное 3D Искусство",
+      description: "Иммерсивное и высокоинтерактивное путешествие в искусство Винсента ван Гога. Включает впечатляющие 3D-среды, динамичные визуальные эффекты и глубокое погружение в его шедевры.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомные шейдеры, иммерсивный звук.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "среды": "3D", "fps": "60.0", "опыт": "Иммерсивный" },
+      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -543,26 +563,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://serjtlgram.github.io/strike-map/",
       stats: { "объекты": "3200+", "кадров": "60.0", "обновление": "Realtime" },
       gradient: "from-red-500 to-rose-900"
-    },
-    {
-      id: "art-quest",
-      title: "АРТ-трилер",
-      category: "Квест",
-      description: "Атмосферный кинематографический психологический трилер с нелинейным сценарием, интегрированными звуковыми фильтрами и эффектом пленочного шума.",
-      techSpecs: "React, State Machine Core, HTML5 Web Audio Synthesis, CSS Shader overlay, фоновый асинхронный загрузчик ресурсов.",
-      link: "https://artquest-delta.vercel.app/",
-      stats: { "финалы": "5 endings", "медиа": "120MB+", "сессия": "22min" },
-      gradient: "from-amber-500 to-amber-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Иммерсивная выставка Ван Гога",
-      category: "Интерактивное 3D Искусство",
-      description: "Иммерсивное и высокоинтерактивное путешествие в искусство Винсента ван Гога. Включает впечатляющие 3D-среды, динамичные визуальные эффекты и глубокое погружение в его шедевры.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомные шейдеры, иммерсивный звук.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "среды": "3D", "fps": "60.0", "опыт": "Иммерсивный" },
-      gradient: "from-blue-600 to-yellow-600"
     }
   ]
 };
