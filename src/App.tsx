@@ -247,6 +247,16 @@ const TRANSLATIONS = {
 const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: string; description: string; techSpecs: string; link: string; alternativeLink?: string; stats: Record<string, string>; gradient: string; }[]> = {
   en: [
     {
+      id: "lista-app",
+      title: "Lista — Smart Media Tracker",
+      category: "Telegram Mini App",
+      description: "All-in-one media tracker inside Telegram. A single dashboard to organize movies, TV shows, books, and games. Features smart folders, advanced inline search, and detailed viewing activity analytics.",
+      techSpecs: "Telegram WebApps Core, React, Go Backend, TMDb/Kinopoisk APIs, AI Search Engine.",
+      link: "https://t.me/manytgbot?startapp",
+      stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
+      gradient: "from-cyan-400 to-teal-700"
+    },
+    {
       id: "loyalty-bot",
       title: "Customer Retention Tool",
       category: "Telegram B2B",
@@ -255,16 +265,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "transactions": "1.2M", "ping": "45ms", "systems": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Van Gogh Immersive Experience",
-      category: "Interactive 3D Art",
-      description: "An immersive and highly interactive journey into the art of Vincent van Gogh. Features stunning 3D environments, dynamic visual effects, and a deep dive into his masterpieces.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, custom shader implementations, immersive audio.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "environments": "3D", "fps": "60.0", "experience": "Immersive" },
-      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -299,6 +299,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-red-500 to-rose-900"
     },
     {
+      id: "van-gogh",
+      title: "Van Gogh Immersive Experience",
+      category: "Interactive 3D Art",
+      description: "An immersive and highly interactive journey into the art of Vincent van Gogh. Features stunning 3D environments, dynamic visual effects, and a deep dive into his masterpieces.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, custom shader implementations, immersive audio.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "environments": "3D", "fps": "60.0", "experience": "Immersive" },
+      gradient: "from-blue-600 to-yellow-600"
+    },
+    {
       id: "art-quest",
       title: "ART Thriller Quest",
       category: "Interactive Narrative",
@@ -311,6 +321,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   es: [
     {
+      id: "lista-app",
+      title: "Lista — Smart Media Tracker",
+      category: "Telegram Mini App",
+      description: "Rastreador multimedia integral dentro de Telegram. Panel unificado para organizar películas, series, libros y juegos. Con carpetas inteligentes, búsqueda en línea avanzada y analíticas de visualización.",
+      techSpecs: "Telegram WebApps Core, React, Go Backend, TMDb/Kinopoisk APIs, AI Search Engine.",
+      link: "https://t.me/manytgbot?startapp",
+      stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
+      gradient: "from-cyan-400 to-teal-700"
+    },
+    {
       id: "loyalty-bot",
       title: "Herramienta de Retención de Clientes",
       category: "Telegram B2B",
@@ -319,16 +339,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Experiencia Inmersiva Van Gogh",
-      category: "Arte 3D Interactivo",
-      description: "Un viaje inmersivo y altamente interactivo al arte de Vincent van Gogh. Cuenta con impresionantes entornos 3D, efectos visuales dinámicos y una exploración profunda de sus obras maestras.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementaciones de shaders personalizados, audio inmersivo.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "entornos": "3D", "fps": "60.0", "experiencia": "Inmersiva" },
-      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -363,6 +373,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-red-500 to-rose-900"
     },
     {
+      id: "van-gogh",
+      title: "Experiencia Inmersiva Van Gogh",
+      category: "Arte 3D Interactivo",
+      description: "Un viaje inmersivo y altamente interactivo al arte de Vincent van Gogh. Cuenta con impresionantes entornos 3D, efectos visuales dinámicos y una exploración profunda de sus obras maestras.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementaciones de shaders personalizados, audio inmersivo.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "entornos": "3D", "fps": "60.0", "experiencia": "Inmersiva" },
+      gradient: "from-blue-600 to-yellow-600"
+    },
+    {
       id: "art-quest",
       title: "ART Thriller Quest",
       category: "Aventura Narrativa",
@@ -375,6 +395,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   pt: [
     {
+      id: "lista-app",
+      title: "Lista — Smart Media Tracker",
+      category: "Telegram Mini App",
+      description: "Rastreador de mídia completo dentro do Telegram. Painel unificado para organizar filmes, séries, livros e jogos. Com pastas inteligentes, busca inline avançada e estatísticas detalhadas de atividade.",
+      techSpecs: "Telegram WebApps Core, React, Go Backend, TMDb/Kinopoisk APIs, AI Search Engine.",
+      link: "https://t.me/manytgbot?startapp",
+      stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
+      gradient: "from-cyan-400 to-teal-700"
+    },
+    {
       id: "loyalty-bot",
       title: "Ferramenta de Retenção de Clientes",
       category: "Telegram B2B",
@@ -383,16 +413,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "transac": "1.2M", "ping": "45ms", "apis": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Experiência Imersiva Van Gogh",
-      category: "Arte 3D Interativa",
-      description: "Uma jornada imersiva e altamente interativa na arte de Vincent van Gogh. Apresenta impressionantes ambientes 3D, efeitos visuais dinâmicos e um mergulho profundo em suas obras-primas.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementações de shaders personalizados, áudio imersivo.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "ambientes": "3D", "fps": "60.0", "experiência": "Imersiva" },
-      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -427,6 +447,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-red-500 to-rose-900"
     },
     {
+      id: "van-gogh",
+      title: "Experiência Imersiva Van Gogh",
+      category: "Arte 3D Interativa",
+      description: "Uma jornada imersiva e altamente interativa na arte de Vincent van Gogh. Apresenta impressionantes ambientes 3D, efeitos visuais dinâmicos e um mergulho profundo em suas obras-primas.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, implementações de shaders personalizados, áudio imersivo.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "ambientes": "3D", "fps": "60.0", "experiência": "Imersiva" },
+      gradient: "from-blue-600 to-yellow-600"
+    },
+    {
       id: "art-quest",
       title: "ART Thriller Quest",
       category: "Narrativa Interativa",
@@ -439,6 +469,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   uk: [
     {
+      id: "lista-app",
+      title: "Lista — Smart Media Tracker",
+      category: "Telegram Mini App",
+      description: "Комплексний медіа-трекер всередині Telegram. Єдина панель для організації фільмів, серіалів, книг та ігор. Підтримує розумні папки, просунутий інлайн-пошук і детальну статистику активності перегляду.",
+      techSpecs: "Telegram WebApps Core, React, Go Backend, TMDb/Kinopoisk APIs, AI Search Engine.",
+      link: "https://t.me/manytgbot?startapp",
+      stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
+      gradient: "from-cyan-400 to-teal-700"
+    },
+    {
       id: "loyalty-bot",
       title: "Інструмент утримання клієнтів",
       category: "Telegram B2B",
@@ -447,16 +487,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "транзакції": "1.2M", "пінг": "45ms", "інтеграції": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Імерсивна виставка Ван Гога",
-      category: "Інтерактивне 3D Мистецтво",
-      description: "Імерсивна та високоінтерактивна подорож у мистецтво Вінсента ван Гога. Включає вражаючі 3D-середовища, динамічні візуальні ефекти та глибоке занурення в його шедеври.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомні шейдери, імерсивний звук.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "середовища": "3D", "fps": "60.0", "досвід": "Імерсивний" },
-      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -491,6 +521,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-red-500 to-rose-900"
     },
     {
+      id: "van-gogh",
+      title: "Імерсивна виставка Ван Гога",
+      category: "Інтерактивне 3D Мистецтво",
+      description: "Імерсивна та високоінтерактивна подорож у мистецтво Вінсента ван Гога. Включає вражаючі 3D-середовища, динамічні візуальні ефекти та глибоке занурення в його шедеври.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомні шейдери, імерсивний звук.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "середовища": "3D", "fps": "60.0", "досвід": "Імерсивний" },
+      gradient: "from-blue-600 to-yellow-600"
+    },
+    {
       id: "art-quest",
       title: "АРТ-трилер",
       category: "Квест",
@@ -503,6 +543,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
   ],
   ru: [
     {
+      id: "lista-app",
+      title: "Lista — Smart Media Tracker",
+      category: "Telegram Mini App",
+      description: "Комплексный медиа-трекер внутри Telegram. Единая панель для организации фильмов, сериалов, книг и игр. Поддерживает умные папки, продвинутый инлайн-поиск и детальную статистику активности просмотра.",
+      techSpecs: "Telegram WebApps Core, React, Go Backend, TMDb/Kinopoisk APIs, AI Search Engine.",
+      link: "https://t.me/manytgbot?startapp",
+      stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
+      gradient: "from-cyan-400 to-teal-700"
+    },
+    {
       id: "loyalty-bot",
       title: "Инструмент удержания клиентов",
       category: "Telegram B2B",
@@ -511,16 +561,6 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/diploybot?startapp",
       stats: { "транзакции": "1.2M", "ping": "45ms", "интеграции": "12 APIs" },
       gradient: "from-purple-500 to-fuchsia-900"
-    },
-    {
-      id: "van-gogh",
-      title: "Иммерсивная выставка Ван Гога",
-      category: "Интерактивное 3D Искусство",
-      description: "Иммерсивное и высокоинтерактивное путешествие в искусство Винсента ван Гога. Включает впечатляющие 3D-среды, динамичные визуальные эффекты и глубокое погружение в его шедевры.",
-      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомные шейдеры, иммерсивный звук.",
-      link: "https://vangogh-theta.vercel.app/",
-      stats: { "среды": "3D", "fps": "60.0", "опыт": "Иммерсивный" },
-      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "pdr-bot",
@@ -553,6 +593,16 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       alternativeLink: "https://serjtlgram.github.io/strike-map/",
       stats: { "объекты": "3200+", "кадров": "60.0", "обновление": "Realtime" },
       gradient: "from-red-500 to-rose-900"
+    },
+    {
+      id: "van-gogh",
+      title: "Иммерсивная выставка Ван Гога",
+      category: "Интерактивное 3D Искусство",
+      description: "Иммерсивное и высокоинтерактивное путешествие в искусство Винсента ван Гога. Включает впечатляющие 3D-среды, динамичные визуальные эффекты и глубокое погружение в его шедевры.",
+      techSpecs: "React, Three.js, WebGL, Tailwind CSS, кастомные шейдеры, иммерсивный звук.",
+      link: "https://vangogh-theta.vercel.app/",
+      stats: { "среды": "3D", "fps": "60.0", "опыт": "Иммерсивный" },
+      gradient: "from-blue-600 to-yellow-600"
     },
     {
       id: "art-quest",

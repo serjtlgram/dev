@@ -50,10 +50,12 @@ index.html      # HTML shell with SEO meta tags
 
 | Project | Category | Link |
 |---|---|---|
+| Lista — Smart Media Tracker | Telegram Mini App | [t.me/manytgbot](https://t.me/manytgbot?startapp) |
+| Loyalty SaaS Matrix | Telegram B2B | [t.me/diploybot](https://t.me/diploybot?startapp) |
 | PDR Ukraine Bot | Telegram Mini App | [t.me/ispytpdrbot](https://t.me/ispytpdrbot?startapp) |
 | PDR Landing Suite | Marketing Engine | [pdr-landing-psi.vercel.app](https://pdr-landing-psi.vercel.app/) |
-| Loyalty SaaS Matrix | Telegram B2B | [t.me/diploybot](https://t.me/diploybot?startapp) |
 | OSINT Strike Map 2026 | Defense Analytics | [serjtlgram.github.io/strike-map](https://serjtlgram.github.io/strike-map/) |
+| Van Gogh Experience | Interactive 3D Art | [vangogh-theta.vercel.app](https://vangogh-theta.vercel.app/) |
 | ART Thriller Quest | Interactive Narrative | [artquest-delta.vercel.app](https://artquest-delta.vercel.app/) |
 
 ---
