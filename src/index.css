@@ -170,4 +170,5 @@ canvas {
 .card-bg-radar       { animation: cardRadarSweep 4s linear infinite; }
 .card-bg-net         { animation: cardNetPulse 3s ease-in-out infinite; }
 .card-bg-scan        { animation: cardScanDrift 3s linear infinite; }
+.card-bg-reel        { animation: cardGridShimmer 6s ease-in-out infinite; }
 

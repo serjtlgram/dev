@@ -1228,6 +1228,95 @@ const AbstractCardBg = ({ projectId, active }: { projectId: string; active: bool
         transition: 'opacity 0.6s cubic-bezier(0.4,0,0.2,1)',
       }}
     >
+      {/* Lista — Cyber Media Tracker & Cinema Reel with Audio/Video Spectrum */}
+      {projectId === 'lista-app' && (
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="bg-lista" cx="60%" cy="30%">
+              <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.16" />
+              <stop offset="100%" stopColor="#042f2e" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="reel-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#0d9488" stopOpacity="0.08" />
+            </linearGradient>
+          </defs>
+          <rect width="400" height="300" fill="url(#bg-lista)" />
+
+          {/* Media Film Ribbon (Curved track) */}
+          <path
+            d="M-20,95 C120,40 260,130 420,70"
+            fill="none"
+            stroke="url(#reel-glow)"
+            strokeWidth="38"
+            strokeLinecap="round"
+          />
+          {/* Film guide rails */}
+          <path
+            d="M-20,76 C120,21 260,111 420,51"
+            fill="none"
+            stroke="#22d3ee"
+            strokeWidth="0.8"
+            strokeOpacity="0.35"
+            strokeDasharray="6 4"
+            className="card-bg-reel"
+          />
+          <path
+            d="M-20,114 C120,59 260,149 420,89"
+            fill="none"
+            stroke="#0d9488"
+            strokeWidth="0.8"
+            strokeOpacity="0.3"
+            strokeDasharray="6 4"
+            className="card-bg-reel"
+          />
+
+          {/* Media Frames on Ribbon */}
+          <g opacity="0.45">
+            <rect x="75" y="44" width="30" height="22" rx="3" fill="#083344" stroke="#22d3ee" strokeWidth="0.7" transform="rotate(-14 90 55)" />
+            <rect x="180" y="68" width="30" height="22" rx="3" fill="#083344" stroke="#22d3ee" strokeWidth="0.7" transform="rotate(12 195 79)" />
+            <rect x="290" y="74" width="30" height="22" rx="3" fill="#083344" stroke="#14b8a6" strokeWidth="0.7" transform="rotate(-8 305 85)" />
+          </g>
+
+          {/* Minimalist Media Tracker Glyphs */}
+          {/* Play triangle */}
+          <path d="M 335 155 L 347 163 L 335 171 Z" fill="none" stroke="#22d3ee" strokeWidth="1" strokeOpacity="0.45" />
+          {/* Smart Bookmark / List Outline */}
+          <path d="M 50 180 L 68 180 L 68 204 L 59 197 L 50 204 Z" fill="none" stroke="#14b8a6" strokeWidth="0.8" strokeOpacity="0.3" />
+
+          {/* Equalizer Spectrum Bars (Lightweight GPU-accelerated SVG animations) */}
+          <g opacity="0.4">
+            <line x1="280" y1="260" x2="280" y2="235" stroke="#22d3ee" strokeWidth="2.5" strokeLinecap="round">
+              <animate attributeName="y2" values="235;248;235" dur="1.8s" repeatCount="indefinite" />
+            </line>
+            <line x1="290" y1="260" x2="290" y2="220" stroke="#06b6d4" strokeWidth="2.5" strokeLinecap="round">
+              <animate attributeName="y2" values="220;242;220" dur="2.4s" repeatCount="indefinite" />
+            </line>
+            <line x1="300" y1="260" x2="300" y2="210" stroke="#22d3ee" strokeWidth="2.5" strokeLinecap="round">
+              <animate attributeName="y2" values="210;235;210" dur="1.6s" repeatCount="indefinite" />
+            </line>
+            <line x1="310" y1="260" x2="310" y2="228" stroke="#14b8a6" strokeWidth="2.5" strokeLinecap="round">
+              <animate attributeName="y2" values="228;250;228" dur="2.1s" repeatCount="indefinite" />
+            </line>
+            <line x1="320" y1="260" x2="320" y2="215" stroke="#22d3ee" strokeWidth="2.5" strokeLinecap="round">
+              <animate attributeName="y2" values="215;245;215" dur="1.9s" repeatCount="indefinite" />
+            </line>
+            <line x1="330" y1="260" x2="330" y2="238" stroke="#06b6d4" strokeWidth="2.5" strokeLinecap="round">
+              <animate attributeName="y2" values="238;252;238" dur="2.6s" repeatCount="indefinite" />
+            </line>
+          </g>
+
+          {/* Sync status beacon */}
+          <circle cx="340" cy="40" r="3" fill="#22d3ee" fillOpacity="0.65">
+            <animate attributeName="opacity" values="0.65;0.2;0.65" dur="2.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="340" cy="40" r="7" fill="none" stroke="#06b6d4" strokeWidth="0.5" strokeOpacity="0.3">
+            <animate attributeName="r" values="4;10;4" dur="2.2s" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="2.2s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      )}
+
       {/* Van Gogh Experience — starry night swirls and vibrant yellows */}
       {projectId === 'van-gogh' && (
         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
@@ -1456,11 +1545,12 @@ type Project = {
 
 const getProjectBlobColors = (projectId: string) => {
   const colors: Record<string, { blob1: string; blob2: string }> = {
+    'lista-app': { blob1: 'bg-cyan-500/20', blob2: 'bg-teal-600/15' },
     'pdr-bot': { blob1: 'bg-blue-500/20', blob2: 'bg-indigo-600/15' },
     'pdr-landing': { blob1: 'bg-emerald-500/20', blob2: 'bg-teal-600/15' },
     'loyalty-bot': { blob1: 'bg-purple-500/20', blob2: 'bg-fuchsia-600/15' },
     'strike-map': { blob1: 'bg-red-500/20', blob2: 'bg-rose-600/15' },
-        'art-quest': { blob1: 'bg-amber-500/20', blob2: 'bg-yellow-600/15' },
+    'art-quest': { blob1: 'bg-amber-500/20', blob2: 'bg-yellow-600/15' },
     'van-gogh': { blob1: 'bg-yellow-500/20', blob2: 'bg-blue-600/15' }
   };
   return colors[projectId] || { blob1: 'bg-cyan-500/20', blob2: 'bg-blue-600/15' };
