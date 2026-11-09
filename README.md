@@ -52,6 +52,7 @@ index.html      # HTML shell with SEO meta tags
 |---|---|---|
 | Lista — Smart Media Tracker | Telegram Mini App | [t.me/manytgbot](https://t.me/manytgbot?startapp) |
 | Radiola FM — Retro-Cyber Radio | Telegram Mini App & PWA | [t.me/RadiolaFMbot](https://t.me/RadiolaFMbot) |
+| NASA Space & Science — 3D Portal | Telegram Mini App & 3D | [t.me/NASASpaceapp](https://t.me/NASASpaceapp?startapp) |
 | Loyalty SaaS Matrix | Telegram B2B | [t.me/diploybot](https://t.me/diploybot?startapp) |
 | PDR Ukraine Bot | Telegram Mini App | [t.me/ispytpdrbot](https://t.me/ispytpdrbot?startapp) |
 | PDR Landing Suite | Marketing Engine | [pdr-landing-psi.vercel.app](https://pdr-landing-psi.vercel.app/) |
