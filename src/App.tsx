@@ -1501,132 +1501,6 @@ const AbstractCardBg = ({ projectId, active }: { projectId: string; active: bool
                     {tick.label}
                   </text>
                 )}
-      {/* NASA Space & Science — Deep Space Black Hole, Accretion Disk, Orbital Telemetry & Meteor */}
-      {projectId === 'nasa-space' && (
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <radialGradient id="bg-nasa" cx="70%" cy="35%">
-              <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.18" />
-              <stop offset="40%" stopColor="#6366f1" stopOpacity="0.12" />
-              <stop offset="75%" stopColor="#3b0764" stopOpacity="0.06" />
-              <stop offset="100%" stopColor="#030712" stopOpacity="0" />
-            </radialGradient>
-            <radialGradient id="accretion-glow" cx="50%" cy="50%">
-              <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.9" />
-              <stop offset="45%" stopColor="#818cf8" stopOpacity="0.6" />
-              <stop offset="75%" stopColor="#c084fc" stopOpacity="0.3" />
-              <stop offset="100%" stopColor="#a855f7" stopOpacity="0" />
-            </radialGradient>
-            <linearGradient id="meteor-trail" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#fde047" stopOpacity="0.9" />
-              <stop offset="30%" stopColor="#f97316" stopOpacity="0.6" />
-              <stop offset="70%" stopColor="#dc2626" stopOpacity="0.2" />
-              <stop offset="100%" stopColor="#7c2d12" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient id="jet-beam" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#67e8f9" stopOpacity="0" />
-              <stop offset="45%" stopColor="#38bdf8" stopOpacity="0.7" />
-              <stop offset="50%" stopColor="#ffffff" stopOpacity="0.95" />
-              <stop offset="55%" stopColor="#818cf8" stopOpacity="0.7" />
-              <stop offset="100%" stopColor="#a855f7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-          <rect width="400" height="300" fill="url(#bg-nasa)" />
-
-          {/* Deep Space Starfield & Constellation Lines */}
-          <g opacity="0.45">
-            {[
-              { cx: 40, cy: 50, r: 1.2, dur: "2.1s" },
-              { cx: 90, cy: 80, r: 1.8, dur: "3.4s" },
-              { cx: 160, cy: 40, r: 1.0, dur: "1.8s" },
-              { cx: 70, cy: 190, r: 1.5, dur: "2.8s" },
-              { cx: 130, cy: 230, r: 1.2, dur: "3.0s" },
-              { cx: 210, cy: 260, r: 1.6, dur: "2.5s" },
-              { cx: 50, cy: 120, r: 1.0, dur: "3.7s" },
-              { cx: 180, cy: 140, r: 1.4, dur: "2.2s" },
-              { cx: 370, cy: 240, r: 1.2, dur: "1.9s" }
-            ].map((star, i) => (
-              <circle key={i} cx={star.cx} cy={star.cy} r={star.r} fill="#e0f2fe">
-                <animate attributeName="opacity" values="0.8;0.2;0.8" dur={star.dur} repeatCount="indefinite" />
-              </circle>
-            ))}
-            <line x1="40" y1="50" x2="90" y2="80" stroke="#38bdf8" strokeWidth="0.5" strokeOpacity="0.3" strokeDasharray="2 3" />
-            <line x1="90" y1="80" x2="160" y2="40" stroke="#818cf8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 3" />
-            <line x1="70" y1="190" x2="130" y2="230" stroke="#38bdf8" strokeWidth="0.5" strokeOpacity="0.2" strokeDasharray="2 3" />
-            <line x1="130" y1="230" x2="210" y2="260" stroke="#a855f7" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 3" />
-          </g>
-
-          {/* NASA Telemetry HUD Target Overlay */}
-          <g opacity="0.6">
-            <rect x="25" y="30" width="112" height="26" rx="5" fill="#000000" fillOpacity="0.45" stroke="#38bdf8" strokeWidth="0.7" strokeOpacity="0.35" />
-            <circle cx="36" cy="43" r="3" fill="#38bdf8">
-              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
-            </circle>
-            <text x="45" y="41" fill="#38bdf8" fontSize="6.5" fontFamily="monospace" fontWeight="bold" letterSpacing="0.8">NASA • JWST DEEP</text>
-            <text x="45" y="49" fill="#94a3b8" fontSize="5.5" fontFamily="monospace">RA 17h45m / DEC -29°</text>
-
-            <rect x="143" y="30" width="62" height="26" rx="5" fill="#000000" fillOpacity="0.45" stroke="#a855f7" strokeWidth="0.7" strokeOpacity="0.35" />
-            <text x="149" y="41" fill="#c084fc" fontSize="6" fontFamily="monospace" fontWeight="bold">APOD: SYNC</text>
-            <text x="149" y="49" fill="#67e8f9" fontSize="5.5" fontFamily="monospace">3D WEBGL LIVE</text>
-          </g>
-
-          {/* Interactive 3D Black Hole with Accretion Disk */}
-          <g transform="translate(290, 115)">
-            <line x1="0" y1="-85" x2="0" y2="85" stroke="url(#jet-beam)" strokeWidth="1.6" strokeLinecap="round" opacity="0.8">
-              <animate attributeName="opacity" values="0.8;0.35;0.8" dur="2s" repeatCount="indefinite" />
-            </line>
-
-            <ellipse cx="0" cy="0" rx="76" ry="24" fill="none" stroke="url(#accretion-glow)" strokeWidth="8" opacity="0.3" transform="rotate(-18)">
-              <animate attributeName="rx" values="74;78;74" dur="4s" repeatCount="indefinite" />
-              <animate attributeName="ry" values="23;25;23" dur="4s" repeatCount="indefinite" />
-            </ellipse>
-
-            <ellipse cx="0" cy="0" rx="66" ry="19" fill="none" stroke="#38bdf8" strokeWidth="2.2" strokeOpacity="0.7" strokeDasharray="14 6" transform="rotate(-18)">
-              <animateTransform attributeName="transform" type="rotate" from="-18" to="342" dur="18s" repeatCount="indefinite" />
-            </ellipse>
-            <ellipse cx="0" cy="0" rx="52" ry="14" fill="none" stroke="#c084fc" strokeWidth="2.0" strokeOpacity="0.65" strokeDasharray="10 8" transform="rotate(-18)">
-              <animateTransform attributeName="transform" type="rotate" from="342" to="-18" dur="14s" repeatCount="indefinite" />
-            </ellipse>
-
-            <circle cx="0" cy="0" r="26" fill="none" stroke="#67e8f9" strokeWidth="2" strokeOpacity="0.9" className="drop-shadow-[0_0_10px_#38bdf8]">
-              <animate attributeName="stroke-opacity" values="0.9;0.5;0.9" dur="2.4s" repeatCount="indefinite" />
-            </circle>
-
-            <circle cx="0" cy="0" r="23" fill="#030712" stroke="#1e1b4b" strokeWidth="1" />
-          </g>
-
-          {/* Orbital Satellite Trajectory & Hubble/DSCOVR Tracker */}
-          <g opacity="0.5">
-            <ellipse cx="190" cy="180" rx="140" ry="55" fill="none" stroke="#38bdf8" strokeWidth="0.7" strokeDasharray="4 8" strokeOpacity="0.3" transform="rotate(-12 190 180)" />
-            
-            <circle cx="90" cy="160" r="3" fill="#67e8f9">
-              <animate attributeName="cx" values="90;260;310;170;90" dur="12s" repeatCount="indefinite" />
-              <animate attributeName="cy" values="160;145;195;210;160" dur="12s" repeatCount="indefinite" />
-            </circle>
-            <circle cx="90" cy="160" r="6" fill="none" stroke="#38bdf8" strokeWidth="0.5">
-              <animate attributeName="cx" values="90;260;310;170;90" dur="12s" repeatCount="indefinite" />
-              <animate attributeName="cy" values="160;145;195;210;160" dur="12s" repeatCount="indefinite" />
-              <animate attributeName="r" values="3;9;3" dur="2s" repeatCount="indefinite" />
-              <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
-            </circle>
-          </g>
-
-          {/* Near-Earth Asteroid / Burning Meteor Trajectory (NeoWs API) */}
-          <g opacity="0.7">
-            <line x1="380" y1="10" x2="230" y2="85" stroke="url(#meteor-trail)" strokeWidth="2.2" strokeLinecap="round">
-              <animate attributeName="x1" values="420;320;420" dur="6s" repeatCount="indefinite" />
-              <animate attributeName="y1" values="-10;40;-10" dur="6s" repeatCount="indefinite" />
-              <animate attributeName="x2" values="270;170;270" dur="6s" repeatCount="indefinite" />
-              <animate attributeName="y2" values="65;115;65" dur="6s" repeatCount="indefinite" />
-            </line>
-            <circle cx="230" cy="85" r="2.2" fill="#fde047">
-              <animate attributeName="cx" values="270;170;270" dur="6s" repeatCount="indefinite" />
-              <animate attributeName="cy" values="65;115;65" dur="6s" repeatCount="indefinite" />
-            </circle>
-          </g>
-        </svg>
-      )}
-
               </g>
             ))}
 
@@ -1752,6 +1626,132 @@ const AbstractCardBg = ({ projectId, active }: { projectId: string; active: bool
         </svg>
       )}
 
+
+      {/* NASA Space & Science — Deep Space Black Hole, Accretion Disk, Orbital Telemetry & Meteor */}
+      {projectId === 'nasa-space' && (
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="bg-nasa" cx="70%" cy="35%">
+              <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.18" />
+              <stop offset="40%" stopColor="#6366f1" stopOpacity="0.12" />
+              <stop offset="75%" stopColor="#3b0764" stopOpacity="0.06" />
+              <stop offset="100%" stopColor="#030712" stopOpacity="0" />
+            </radialGradient>
+            <radialGradient id="accretion-glow" cx="50%" cy="50%">
+              <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.9" />
+              <stop offset="45%" stopColor="#818cf8" stopOpacity="0.6" />
+              <stop offset="75%" stopColor="#c084fc" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#a855f7" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="meteor-trail" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fde047" stopOpacity="0.9" />
+              <stop offset="30%" stopColor="#f97316" stopOpacity="0.6" />
+              <stop offset="70%" stopColor="#dc2626" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#7c2d12" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="jet-beam" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#67e8f9" stopOpacity="0" />
+              <stop offset="45%" stopColor="#38bdf8" stopOpacity="0.7" />
+              <stop offset="50%" stopColor="#ffffff" stopOpacity="0.95" />
+              <stop offset="55%" stopColor="#818cf8" stopOpacity="0.7" />
+              <stop offset="100%" stopColor="#a855f7" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          <rect width="400" height="300" fill="url(#bg-nasa)" />
+
+          {/* Deep Space Starfield & Constellation Lines */}
+          <g opacity="0.45">
+            {[
+              { cx: 40, cy: 50, r: 1.2, dur: "2.1s" },
+              { cx: 90, cy: 80, r: 1.8, dur: "3.4s" },
+              { cx: 160, cy: 40, r: 1.0, dur: "1.8s" },
+              { cx: 70, cy: 190, r: 1.5, dur: "2.8s" },
+              { cx: 130, cy: 230, r: 1.2, dur: "3.0s" },
+              { cx: 210, cy: 260, r: 1.6, dur: "2.5s" },
+              { cx: 50, cy: 120, r: 1.0, dur: "3.7s" },
+              { cx: 180, cy: 140, r: 1.4, dur: "2.2s" },
+              { cx: 370, cy: 240, r: 1.2, dur: "1.9s" }
+            ].map((star, i) => (
+              <circle key={i} cx={star.cx} cy={star.cy} r={star.r} fill="#e0f2fe">
+                <animate attributeName="opacity" values="0.8;0.2;0.8" dur={star.dur} repeatCount="indefinite" />
+              </circle>
+            ))}
+            <line x1="40" y1="50" x2="90" y2="80" stroke="#38bdf8" strokeWidth="0.5" strokeOpacity="0.3" strokeDasharray="2 3" />
+            <line x1="90" y1="80" x2="160" y2="40" stroke="#818cf8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 3" />
+            <line x1="70" y1="190" x2="130" y2="230" stroke="#38bdf8" strokeWidth="0.5" strokeOpacity="0.2" strokeDasharray="2 3" />
+            <line x1="130" y1="230" x2="210" y2="260" stroke="#a855f7" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 3" />
+          </g>
+
+          {/* NASA Telemetry HUD Target Overlay */}
+          <g opacity="0.6">
+            <rect x="25" y="30" width="112" height="26" rx="5" fill="#000000" fillOpacity="0.45" stroke="#38bdf8" strokeWidth="0.7" strokeOpacity="0.35" />
+            <circle cx="36" cy="43" r="3" fill="#38bdf8">
+              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+            </circle>
+            <text x="45" y="41" fill="#38bdf8" fontSize="6.5" fontFamily="monospace" fontWeight="bold" letterSpacing="0.8">NASA • JWST DEEP</text>
+            <text x="45" y="49" fill="#94a3b8" fontSize="5.5" fontFamily="monospace">RA 17h45m / DEC -29°</text>
+
+            <rect x="143" y="30" width="62" height="26" rx="5" fill="#000000" fillOpacity="0.45" stroke="#a855f7" strokeWidth="0.7" strokeOpacity="0.35" />
+            <text x="149" y="41" fill="#c084fc" fontSize="6" fontFamily="monospace" fontWeight="bold">APOD: SYNC</text>
+            <text x="149" y="49" fill="#67e8f9" fontSize="5.5" fontFamily="monospace">3D WEBGL LIVE</text>
+          </g>
+
+          {/* Interactive 3D Black Hole with Accretion Disk */}
+          <g transform="translate(290, 115)">
+            <line x1="0" y1="-85" x2="0" y2="85" stroke="url(#jet-beam)" strokeWidth="1.6" strokeLinecap="round" opacity="0.8">
+              <animate attributeName="opacity" values="0.8;0.35;0.8" dur="2s" repeatCount="indefinite" />
+            </line>
+
+            <ellipse cx="0" cy="0" rx="76" ry="24" fill="none" stroke="url(#accretion-glow)" strokeWidth="8" opacity="0.3" transform="rotate(-18)">
+              <animate attributeName="rx" values="74;78;74" dur="4s" repeatCount="indefinite" />
+              <animate attributeName="ry" values="23;25;23" dur="4s" repeatCount="indefinite" />
+            </ellipse>
+
+            <ellipse cx="0" cy="0" rx="66" ry="19" fill="none" stroke="#38bdf8" strokeWidth="2.2" strokeOpacity="0.7" strokeDasharray="14 6" transform="rotate(-18)">
+              <animateTransform attributeName="transform" type="rotate" from="-18" to="342" dur="18s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse cx="0" cy="0" rx="52" ry="14" fill="none" stroke="#c084fc" strokeWidth="2.0" strokeOpacity="0.65" strokeDasharray="10 8" transform="rotate(-18)">
+              <animateTransform attributeName="transform" type="rotate" from="342" to="-18" dur="14s" repeatCount="indefinite" />
+            </ellipse>
+
+            <circle cx="0" cy="0" r="26" fill="none" stroke="#67e8f9" strokeWidth="2" strokeOpacity="0.9" className="drop-shadow-[0_0_10px_#38bdf8]">
+              <animate attributeName="stroke-opacity" values="0.9;0.5;0.9" dur="2.4s" repeatCount="indefinite" />
+            </circle>
+
+            <circle cx="0" cy="0" r="23" fill="#030712" stroke="#1e1b4b" strokeWidth="1" />
+          </g>
+
+          {/* Orbital Satellite Trajectory & Hubble/DSCOVR Tracker */}
+          <g opacity="0.5">
+            <ellipse cx="190" cy="180" rx="140" ry="55" fill="none" stroke="#38bdf8" strokeWidth="0.7" strokeDasharray="4 8" strokeOpacity="0.3" transform="rotate(-12 190 180)" />
+            
+            <circle cx="90" cy="160" r="3" fill="#67e8f9">
+              <animate attributeName="cx" values="90;260;310;170;90" dur="12s" repeatCount="indefinite" />
+              <animate attributeName="cy" values="160;145;195;210;160" dur="12s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="90" cy="160" r="6" fill="none" stroke="#38bdf8" strokeWidth="0.5">
+              <animate attributeName="cx" values="90;260;310;170;90" dur="12s" repeatCount="indefinite" />
+              <animate attributeName="cy" values="160;145;195;210;160" dur="12s" repeatCount="indefinite" />
+              <animate attributeName="r" values="3;9;3" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+            </circle>
+          </g>
+
+          {/* Near-Earth Asteroid / Burning Meteor Trajectory (NeoWs API) */}
+          <g opacity="0.7">
+            <line x1="380" y1="10" x2="230" y2="85" stroke="url(#meteor-trail)" strokeWidth="2.2" strokeLinecap="round">
+              <animate attributeName="x1" values="420;320;420" dur="6s" repeatCount="indefinite" />
+              <animate attributeName="y1" values="-10;40;-10" dur="6s" repeatCount="indefinite" />
+              <animate attributeName="x2" values="270;170;270" dur="6s" repeatCount="indefinite" />
+              <animate attributeName="y2" values="65;115;65" dur="6s" repeatCount="indefinite" />
+            </line>
+            <circle cx="230" cy="85" r="2.2" fill="#fde047">
+              <animate attributeName="cx" values="270;170;270" dur="6s" repeatCount="indefinite" />
+              <animate attributeName="cy" values="65;115;65" dur="6s" repeatCount="indefinite" />
+            </circle>
+          </g>
+        </svg>
+      )}
 
       {/* Van Gogh Experience — starry night swirls and vibrant yellows */}
       {projectId === 'van-gogh' && (
