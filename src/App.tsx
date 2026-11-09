@@ -257,6 +257,17 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-cyan-400 to-teal-700"
     },
     {
+      id: "radiola-fm",
+      title: "Radiola FM — Retro-Cyber Radio",
+      category: "Telegram Mini App & PWA",
+      description: "Next-gen online radio streaming suite for Telegram Mini Apps, web browsers, and installable desktop/mobile PWA. Features curated global HD audio streams, matrix LED visualizer, floating Document Picture-in-Picture player, and lock-screen MediaSession controls.",
+      techSpecs: "TGCloud Serverless (Node.js), React, SQLite Cache, Radio Browser API, Document Picture-in-Picture, MediaSession API, Web Audio API, Tailwind CSS, PWA Manifest.",
+      link: "https://t.me/RadiolaFMbot",
+      alternativeLink: "https://app9209468929.tgcloud.ai/",
+      stats: { "audio": "HD 320K", "mode": "PiP & PWA", "runtime": "TGCloud" },
+      gradient: "from-amber-400 via-orange-500 to-rose-600"
+    },
+    {
       id: "loyalty-bot",
       title: "Customer Retention Tool",
       category: "Telegram B2B",
@@ -329,6 +340,17 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/manytgbot?startapp",
       stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
       gradient: "from-cyan-400 to-teal-700"
+    },
+    {
+      id: "radiola-fm",
+      title: "Radiola FM — Radio Retro-Cyber",
+      category: "Telegram Mini App & PWA",
+      description: "Reproductor de radio online de alta fidelidad para Telegram Mini App, navegador web y PWA instalable. Incluye estaciones globales en HD, ecualizador matricial LED, ventana flotante Picture-in-Picture y controles en pantalla de bloqueo vía MediaSession.",
+      techSpecs: "TGCloud Serverless (Node.js), React, SQLite Cache, Radio Browser API, Document Picture-in-Picture, MediaSession API, Web Audio API, Tailwind CSS, PWA.",
+      link: "https://t.me/RadiolaFMbot",
+      alternativeLink: "https://app9209468929.tgcloud.ai/",
+      stats: { "audio": "HD 320K", "modo": "PiP & PWA", "servidor": "TGCloud" },
+      gradient: "from-amber-400 via-orange-500 to-rose-600"
     },
     {
       id: "loyalty-bot",
@@ -405,6 +427,17 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-cyan-400 to-teal-700"
     },
     {
+      id: "radiola-fm",
+      title: "Radiola FM — Rádio Retro-Cyber",
+      category: "Telegram Mini App & PWA",
+      description: "Reprodutor de rádio online moderno para Telegram Mini App, navegadores web e PWA instalável. Conta com transmissões mundiais em HD, equalizador matricial de LED, miniplayer flutuante Picture-in-Picture e controles de tela de bloqueio via MediaSession.",
+      techSpecs: "TGCloud Serverless (Node.js), React, SQLite Cache, Radio Browser API, Document Picture-in-Picture, MediaSession API, Web Audio API, Tailwind CSS, PWA.",
+      link: "https://t.me/RadiolaFMbot",
+      alternativeLink: "https://app9209468929.tgcloud.ai/",
+      stats: { "áudio": "HD 320K", "modo": "PiP & PWA", "servidor": "TGCloud" },
+      gradient: "from-amber-400 via-orange-500 to-rose-600"
+    },
+    {
       id: "loyalty-bot",
       title: "Ferramenta de Retenção de Clientes",
       category: "Telegram B2B",
@@ -479,6 +512,17 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       gradient: "from-cyan-400 to-teal-700"
     },
     {
+      id: "radiola-fm",
+      title: "Radiola FM — Онлайн-радіо",
+      category: "Telegram Mini App & PWA",
+      description: "Сучасний онлайн-радіоплеєр для Telegram Mini App, браузера та встановлюваного PWA-застосунку. Містить каталогізовані світові HD-потоки, матричний LED-еквалайзер, плаваючий віджет Picture-in-Picture, керування з екрана блокування через MediaSession та хмарне збереження обраного.",
+      techSpecs: "TGCloud Serverless (Node.js), React, SQLite кешування, Radio Browser API, Document Picture-in-Picture, MediaSession API, Web Audio API, Tailwind CSS, PWA.",
+      link: "https://t.me/RadiolaFMbot",
+      alternativeLink: "https://app9209468929.tgcloud.ai/",
+      stats: { "аудіо": "HD 320K", "режим": "PiP & PWA", "сервер": "TGCloud" },
+      gradient: "from-amber-400 via-orange-500 to-rose-600"
+    },
+    {
       id: "loyalty-bot",
       title: "Інструмент утримання клієнтів",
       category: "Telegram B2B",
@@ -551,6 +595,17 @@ const LOCALIZED_PROJECTS: Record<string, { id: string; title: string; category: 
       link: "https://t.me/manytgbot?startapp",
       stats: { "ui/ux": "NATIVE", "ping": "45ms", "sync": "REALTIME" },
       gradient: "from-cyan-400 to-teal-700"
+    },
+    {
+      id: "radiola-fm",
+      title: "Radiola FM — Онлайн-радио",
+      category: "Telegram Mini App & PWA",
+      description: "Современный онлайн-радиоплеер для Telegram Mini App, браузера и устанавливаемого PWA-приложения. Включает каталогизированные мировые HD-станции, матричный LED-эквалайзер, плавающее окно Picture-in-Picture, управление с экрана блокировки через MediaSession и синхронизацию избранного.",
+      techSpecs: "TGCloud Serverless (Node.js), React, SQLite кэширование, Radio Browser API, Document Picture-in-Picture, MediaSession API, Web Audio API, Tailwind CSS, PWA.",
+      link: "https://t.me/RadiolaFMbot",
+      alternativeLink: "https://app9209468929.tgcloud.ai/",
+      stats: { "аудио": "HD 320K", "режим": "PiP & PWA", "сервер": "TGCloud" },
+      gradient: "from-amber-400 via-orange-500 to-rose-600"
     },
     {
       id: "loyalty-bot",
@@ -1316,6 +1371,206 @@ const AbstractCardBg = ({ projectId, active }: { projectId: string; active: bool
           </circle>
         </svg>
       )}
+      {/* Radiola FM — Retro-Cyber Radio Dial, Broadcast Waves & Matrix LED Equalizer */}
+      {projectId === 'radiola-fm' && (
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="bg-radiola" cx="65%" cy="30%">
+              <stop offset="0%" stopColor="#ff7a00" stopOpacity="0.18" />
+              <stop offset="55%" stopColor="#f59e0b" stopOpacity="0.06" />
+              <stop offset="100%" stopColor="#1c0a00" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="radio-scale-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#ff9a3c" stopOpacity="0.1" />
+              <stop offset="50%" stopColor="#ff7a00" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#f59e0b" stopOpacity="0.1" />
+            </linearGradient>
+            <linearGradient id="fm-sine-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.1" />
+              <stop offset="40%" stopColor="#ff7a00" stopOpacity="0.5" />
+              <stop offset="80%" stopColor="#f43f5e" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#e11d48" stopOpacity="0.05" />
+            </linearGradient>
+            <radialGradient id="antenna-glow" cx="50%" cy="50%">
+              <stop offset="0%" stopColor="#ffb800" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#ff7a00" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+          <rect width="400" height="300" fill="url(#bg-radiola)" />
+
+          {/* Retro Analog FM/AM Tuning Scale Track */}
+          <g opacity="0.55">
+            <rect x="24" y="38" width="352" height="28" rx="6" fill="#000000" fillOpacity="0.35" stroke="#ff7a00" strokeWidth="0.8" strokeOpacity="0.3" />
+            <line x1="32" y1="52" x2="368" y2="52" stroke="url(#radio-scale-glow)" strokeWidth="1" />
+            
+            {[
+              { x: 44, h: 10, label: "88" },
+              { x: 62, h: 5 },
+              { x: 80, h: 5 },
+              { x: 98, h: 8, label: "92" },
+              { x: 116, h: 5 },
+              { x: 134, h: 5 },
+              { x: 152, h: 10, label: "96" },
+              { x: 170, h: 5 },
+              { x: 188, h: 5 },
+              { x: 206, h: 8, label: "100" },
+              { x: 224, h: 5 },
+              { x: 242, h: 5 },
+              { x: 260, h: 10, label: "104" },
+              { x: 278, h: 5 },
+              { x: 296, h: 5 },
+              { x: 314, h: 8, label: "108" },
+              { x: 332, h: 5 },
+              { x: 350, h: 10, label: "MHz" }
+            ].map((tick, i) => (
+              <g key={i}>
+                <line
+                  x1={tick.x}
+                  y1={52 - tick.h / 2}
+                  x2={tick.x}
+                  y2={52 + tick.h / 2}
+                  stroke="#ffb800"
+                  strokeWidth={tick.h >= 8 ? "1" : "0.6"}
+                  strokeOpacity={tick.h >= 8 ? "0.65" : "0.35"}
+                />
+                {tick.label && (
+                  <text
+                    x={tick.x}
+                    y={64}
+                    textAnchor="middle"
+                    fill="#ffb800"
+                    fillOpacity="0.5"
+                    fontSize="6"
+                    fontFamily="monospace"
+                  >
+                    {tick.label}
+                  </text>
+                )}
+              </g>
+            ))}
+
+            {/* Animated Tuning Needle / Frequency Indicator */}
+            <line
+              x1="206"
+              y1="40"
+              x2="206"
+              y2="64"
+              stroke="#ff3b30"
+              strokeWidth="2"
+              strokeLinecap="round"
+              className="drop-shadow-[0_0_6px_#ff3b30]"
+            >
+              <animate
+                attributeName="x1"
+                values="152;242;206;296;206"
+                dur="10s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="x2"
+                values="152;242;206;296;206"
+                dur="10s"
+                repeatCount="indefinite"
+              />
+            </line>
+          </g>
+
+          {/* Glowing ON AIR & STEREO Neon Indicators */}
+          <g opacity="0.6">
+            <rect x="28" y="76" width="48" height="16" rx="4" fill="#000000" fillOpacity="0.4" stroke="#ff3b30" strokeWidth="0.8" strokeOpacity="0.4" />
+            <circle cx="37" cy="84" r="2.5" fill="#ff3b30">
+              <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite" />
+            </circle>
+            <text x="44" y="87" fill="#ff4d4f" fontSize="7" fontFamily="monospace" fontWeight="bold" letterSpacing="0.5">LIVE</text>
+
+            <rect x="82" y="76" width="56" height="16" rx="4" fill="#000000" fillOpacity="0.4" stroke="#ff7a00" strokeWidth="0.8" strokeOpacity="0.3" />
+            <circle cx="91" cy="84" r="2.5" fill="#ffb800">
+              <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite" />
+            </circle>
+            <text x="98" y="87" fill="#ffb800" fontSize="7" fontFamily="monospace" fontWeight="bold" letterSpacing="0.5">STEREO</text>
+          </g>
+
+          {/* Broadcast Tower & Pulsating Radio Waves (Top Right) */}
+          <g opacity="0.65">
+            <circle cx="330" cy="115" r="14" fill="none" stroke="#ff7a00" strokeWidth="1" strokeOpacity="0.5">
+              <animate attributeName="r" values="8;48;8" dur="3.2s" repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="330" cy="115" r="26" fill="none" stroke="#ffb800" strokeWidth="0.8" strokeOpacity="0.4">
+              <animate attributeName="r" values="16;68;16" dur="3.2s" begin="0.9s" repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="3.2s" begin="0.9s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="330" cy="115" r="38" fill="none" stroke="#f59e0b" strokeWidth="0.6" strokeOpacity="0.3">
+              <animate attributeName="r" values="24;88;24" dur="3.2s" begin="1.8s" repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="3.2s" begin="1.8s" repeatCount="indefinite" />
+            </circle>
+
+            <path d="M 330 92 L 330 138 M 322 138 L 338 138 M 324 122 L 336 122 M 326 108 L 334 108" stroke="#ffb800" strokeWidth="1.2" strokeOpacity="0.6" strokeLinecap="round" />
+            <circle cx="330" cy="92" r="3" fill="#ff7a00" fillOpacity="0.95">
+              <animate attributeName="fill-opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="r" values="2.8;4.2;2.8" dur="1s" repeatCount="indefinite" />
+            </circle>
+          </g>
+
+          {/* Smooth Sine-Wave Audio Carrier Waveform */}
+          <path
+            d="M 10 180 Q 50 150 90 180 T 170 180 T 250 180 T 330 180 T 400 180"
+            fill="none"
+            stroke="url(#fm-sine-glow)"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            opacity="0.35"
+          >
+            <animate
+              attributeName="d"
+              values="M 10 180 Q 50 150 90 180 T 170 180 T 250 180 T 330 180 T 400 180; M 10 180 Q 50 210 90 180 T 170 180 T 250 180 T 330 180 T 400 180; M 10 180 Q 50 150 90 180 T 170 180 T 250 180 T 330 180 T 400 180"
+              dur="4.5s"
+              repeatCount="indefinite"
+            />
+          </path>
+
+          {/* Matrix LED Dot Equalizer (Signature Radiola FM 9-column dot grid) */}
+          <g opacity="0.55" transform="translate(18, 0)">
+            {[
+              { col: 0, x: 260, peak: 3, dur: "1.4s" },
+              { col: 1, x: 272, peak: 4, dur: "1.8s" },
+              { col: 2, x: 284, peak: 5, dur: "1.3s" },
+              { col: 3, x: 296, peak: 6, dur: "1.9s" },
+              { col: 4, x: 308, peak: 6, dur: "1.5s" },
+              { col: 5, x: 320, peak: 5, dur: "1.7s" },
+              { col: 6, x: 332, peak: 4, dur: "1.4s" },
+              { col: 7, x: 344, peak: 3, dur: "2.0s" },
+              { col: 8, x: 356, peak: 2, dur: "1.6s" }
+            ].map(bar => (
+              <g key={bar.col}>
+                {[0, 1, 2, 3, 4, 5].map(dot => {
+                  const y = 265 - dot * 7.5;
+                  const isPeak = dot >= bar.peak - 1;
+                  const dotColor = dot >= 4 ? "#ffe066" : dot >= 2 ? "#ffb800" : "#ff7a00";
+                  return (
+                    <circle
+                      key={dot}
+                      cx={bar.x}
+                      cy={y}
+                      r="2.2"
+                      fill={dotColor}
+                      fillOpacity={isPeak ? "0.9" : "0.5"}
+                    >
+                      <animate
+                        attributeName="fill-opacity"
+                        values={isPeak ? "0.9;0.15;0.9" : "0.6;0.2;0.6"}
+                        dur={bar.dur}
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                  );
+                })}
+              </g>
+            ))}
+          </g>
+        </svg>
+      )}
+
 
       {/* Van Gogh Experience — starry night swirls and vibrant yellows */}
       {projectId === 'van-gogh' && (
@@ -1546,6 +1801,7 @@ type Project = {
 const getProjectBlobColors = (projectId: string) => {
   const colors: Record<string, { blob1: string; blob2: string }> = {
     'lista-app': { blob1: 'bg-cyan-500/20', blob2: 'bg-teal-600/15' },
+    'radiola-fm': { blob1: 'bg-amber-500/20', blob2: 'bg-orange-600/15' },
     'pdr-bot': { blob1: 'bg-blue-500/20', blob2: 'bg-indigo-600/15' },
     'pdr-landing': { blob1: 'bg-emerald-500/20', blob2: 'bg-teal-600/15' },
     'loyalty-bot': { blob1: 'bg-purple-500/20', blob2: 'bg-fuchsia-600/15' },
